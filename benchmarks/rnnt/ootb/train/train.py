@@ -200,6 +200,8 @@ def evaluate(epoch, step, val_loader, val_feat_proc, detokenize,
     ema_model.train()
     return wer
 
+def handle_trace(prof):
+    prof.export_chrome_trace(f"trace_{prof.step_num}.json")
 
 def main():
 
@@ -493,6 +495,21 @@ def main():
 
     # training loop
     model.train()
+    # TODO: Set as arg
+    enable_profiling = True
+    prof = None
+    if (enable_profiling):
+        prof = torch.profiler.profile(schedule=torch.profiler.schedule(
+                wait=1,
+                warmup=0,
+                active=1,
+            ),
+            on_trace_ready=handle_trace,
+            record_shapes=True,
+            activities=[torch.profiler.ProfilerActivity.CPU,torch.profiler.ProfilerActivity.CUDA],
+        )
+        prof.__enter__()
+
     for epoch in range(start_epoch + 1, args.epochs + 1):
         if args.mlperf:
             logging.log_start(logging.constants.BLOCK_START,
@@ -562,6 +579,8 @@ def main():
 
                 optimizer.step()
                 apply_ema(model, ema_model, args.ema)
+                if prof:
+                    prof.step()
 
                 if step % args.log_frequency == 0 or (time.time() - start_time) > MAX_TIME:
 
@@ -642,6 +661,7 @@ def main():
         # end of epoch
 
     log((), None, 'train_avg', {'throughput': epoch_utts / epoch_time})
+    prof.__exit__(None,None,None)
 
     if last_wer > args.target:
         if args.mlperf:

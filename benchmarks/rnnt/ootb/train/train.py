@@ -148,6 +148,7 @@ def parse_args():
     io.add_argument('--max_symbol_per_sample', type=int, default=None,
                     help='maximum number of symbols per sample can have during eval')
     io.add_argument('--mlperf', action='store_true', help='Enable MLPerf Logging.')
+    io.add_argument('--profile', action='store_true', default=False, help='Enabled profile logging')
 
     # FB5 Logging
     io.add_argument("--fb5logger", type=str, default=None)
@@ -495,14 +496,13 @@ def main():
 
     # training loop
     model.train()
-    # TODO: Set as arg
-    enable_profiling = True
+
     prof = None
-    if (enable_profiling):
+    if (args.profile):
         prof = torch.profiler.profile(schedule=torch.profiler.schedule(
                 wait=1,
-                warmup=0,
-                active=1,
+                warmup=2,
+                active=8,
             ),
             on_trace_ready=handle_trace,
             record_shapes=True,
@@ -579,8 +579,6 @@ def main():
 
                 optimizer.step()
                 apply_ema(model, ema_model, args.ema)
-                if prof:
-                    prof.step()
 
                 if step % args.log_frequency == 0 or (time.time() - start_time) > MAX_TIME:
 
@@ -618,6 +616,10 @@ def main():
                 step += 1
                 accumulated_batches = 0
                 # end of step
+
+            if prof:
+                prof.step()
+
         if args.mlperf:
             logging.log_end(logging.constants.EPOCH_STOP,
                             metadata=dict(epoch_num=epoch))
@@ -661,7 +663,8 @@ def main():
         # end of epoch
 
     log((), None, 'train_avg', {'throughput': epoch_utts / epoch_time})
-    prof.__exit__(None,None,None)
+    if args.profile:
+        prof.__exit__(None,None,None)
 
     if last_wer > args.target:
         if args.mlperf:

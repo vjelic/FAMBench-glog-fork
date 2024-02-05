@@ -107,7 +107,9 @@ ARGS+=" --beta2=$BETA2"
 [ -n "$START_CLIP" ] &&              ARGS+=" --start_clip=$START_CLIP"
 [ -n "$HIDDEN_HIDDEN_BIAS_SCALED" ] && ARGS+=" --hidden_hidden_bias_scale=$HIDDEN_HIDDEN_BIAS_SCALED"
 [ -n "$WEIGHTS_INIT_SCALE" ] &&      ARGS+=" --weights_init_scale=$WEIGHTS_INIT_SCALE"
-[ -n "$MAX_SYMBOL_PER_SAMPLE" ] &&  ARGS+=" --max_symbol_per_sample=$MAX_SYMBOL_PER_SAMPLE"
+[ -n "$MAX_SYMBOL_PER_SAMPLE" ] &&   ARGS+=" --max_symbol_per_sample=$MAX_SYMBOL_PER_SAMPLE"
+[ "$PROFILE" = true ] &&             ARGS+=" --profile"
+
 
 [ $NUM_GPUS -gt 1 ] &&    DISTRIBUTED=${DISTRIBUTED:-"--nproc_per_node=$NUM_GPUS"}
 

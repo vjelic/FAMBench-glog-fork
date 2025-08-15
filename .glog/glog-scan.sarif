@@ -1,0 +1,228 @@
+{
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Glog.AI",
+          "organization": "Glog.AI",
+          "fullName": "Glog, Making software more secure",
+          "version": "1.0.0",
+          "semanticVersion": "1.0.0",
+          "informationUri": "https://www.glog.ai",
+          "rules": [
+            {
+              "id": "glog-56d3e2dc-416a-49d1-ad51-957f2cb1ebd7",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe vulnerability \"Shell Process Initiation: Potential Injection Vulnerability Detected\" in Python refers to the potential for an attacker to inject malicious code or commands into the shell process. This is possible when user-supplied input is used in a shell command without proper sanitization or validation. In the provided code snippet, the variables `folder`, `c`, and `new_class` are directly used in a shell command without any checks, which can lead to shell injection if they contain malicious values.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, it is recommended to avoid using shell commands whenever possible. If it's necessary to use shell commands, make sure to sanitize and validate all user-supplied inputs before using them in a shell command. Avoid using string formatting to build shell commands, as this can easily lead to shell injection vulnerabilities.\n\n## Source Code Fix Recommendation\n\nInstead of using `os.system()`, use `subprocess.run()`, which is a more secure function for running shell commands. Here's how you can modify the provided code snippet:\n\n```python\nimport subprocess\nimport shlex\n\n# Ensure the variables are properly sanitized and validated\nfolder = sanitize_and_validate(folder)\nc = sanitize_and_validate(c)\nnew_class = sanitize_and_validate(new_class)\n\n# Use subprocess.run() instead of os.system()\nsubprocess.run(['cp', f'{folder}/{c}', f'{folder}/{new_class}', '-r'], check=True)\n```\n\n## Library Dependencies\n\nThe code example requires the following Python standard library:\n\n- `subprocess`\n- `shlex` (for command line parsing)\n\n## References\n\n- [OWASP Python Security - Command Injection](https://cheatsheetseries.owasp.org/cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.html)\n- [CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')](https://cwe.mitre.org/data/definitions/78.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B605"
+                ]
+              }
+            },
+            {
+              "id": "glog-76eed19f-38c8-4dcc-bf35-7a81b7364440",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe vulnerability \"Shell Process Initiation: Potential Injection Vulnerability Detected\" in Python refers to the potential for an attacker to inject malicious code into the shell process initiated by the Python script. This is possible when the script uses input to build shell commands, as in the provided code example. If an attacker can control the `git_command` variable, they can append malicious commands that will be executed when the `os.popen()` function is called.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using shell=True in subprocess calls, as this can allow shell injection. Instead, use the list of program arguments directly. Also, avoid using `os.popen()`, `os.system()`, `subprocess.Popen()`, `subprocess.call()`, `subprocess.run()`, and `subprocess.check_output()` with shell commands that use input from an external source.\n\n## Source Code Fix Recommendation\n\nHere is a safer way to execute the command:\n\n```python\nimport subprocess\n\ngit_command = [\"git\", \"rev-parse\", \"--short=10\", \"HEAD\"]\ngit_rev = subprocess.check_output(git_command).decode()\n```\n\n## Library Dependencies\n\nThe code example requires the following Python standard library:\n\n- `subprocess`\n\n## References\n\n- [CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')](https://cwe.mitre.org/data/definitions/78.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B605"
+                ]
+              }
+            },
+            {
+              "id": "glog-aa204ab1-f727-4abe-9c27-bd32b977c2b2",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe vulnerability \"Shell Process Initiation: Potential Injection Vulnerability Detected\" in Python refers to the potential for an attacker to inject malicious code into the shell process initiated by the Python script. This is possible when user input or other untrusted data is used to construct a shell command, as in the provided code example. The `os.popen()` function is used to execute a shell command, and if an attacker can control the `git_command` variable, they can execute arbitrary commands on the system.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using shell commands whenever possible. If it's necessary to use shell commands, ensure that user input or other untrusted data is properly sanitized before it's included in the command. Use parameterized functions or methods that support them, instead of string formatting or concatenation, to construct commands.\n\n## Source Code Fix Recommendation\n\nA safer way to get the last commit date in git using Python would be to use the `subprocess` module, which can execute the command in a safer manner:\n\n```python\nimport subprocess\n\ngit_command = [\"git\", \"log\", \"--format=\\\"%cI\\\"\", \"-n\", \"1\"]\ngit_commit_date = subprocess.check_output(git_command).decode('utf-8')\n```\n\nIn this code, `subprocess.check_output()` executes the command and returns its output. This function does not use a shell to execute the command, so it's not vulnerable to shell injection attacks.\n\n## Library Dependencies\n\nThe code example requires the following Python standard library:\n\n- `os`\n- `subprocess`\n\n## References\n\n- [OWASP Command Injection](https://owasp.org/www-community/attacks/Command_Injection)\n- [CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')](https://cwe.mitre.org/data/definitions/78.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B605"
+                ]
+              }
+            },
+            {
+              "id": "glog-7f2d0ce7-4605-4903-9bba-e63a51f9488c",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe \"Shell Process Initiation: Potential Injection Vulnerability Detected\" vulnerability in Python refers to the potential for an attacker to inject malicious code or commands into the shell process. This is possible when the application uses user input to construct shell commands without properly sanitizing the input first. In the provided code example, the `git_command` variable is concatenated with a string to form a shell command, which is then executed. If an attacker can control the value of `git_command`, they could potentially execute arbitrary commands on the system.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using shell=True in subprocess calls, as this can lead to command injection vulnerabilities if you're not careful with how you construct your command strings. Instead, use the list form of subprocess calls and manually split command strings into their arguments.\n\n## Source Code Fix Recommendation\n\nHere is a safer way to write the code using the `subprocess` module:\n\n```python\nimport subprocess\n\ngit_command = [\"git\", \"status\", \"-s\", \"-uno\"]\ngit_status = subprocess.check_output(git_command).decode()\n```\n\nIn this version, the command and its arguments are passed as a list to `subprocess.check_output()`. This function does not use the shell, so it is not vulnerable to shell injection attacks.\n\n## Library Dependencies\n\nThe code example requires the following Python standard library:\n\n- `subprocess`\n\n## References\n\n- [OWASP Command Injection](https://owasp.org/www-community/attacks/Command_Injection)\n- [CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')](https://cwe.mitre.org/data/definitions/78.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B605"
+                ]
+              }
+            }
+          ],
+          "language": "en-US",
+          "contents": [
+            "localizedData",
+            "nonLocalizedData"
+          ],
+          "isComprehensive": false
+        }
+      },
+      "language": "en-US",
+      "results": [
+        {
+          "ruleId": "glog-56d3e2dc-416a-49d1-ad51-957f2cb1ebd7",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "\"Shell Process Initiation: Potential Injection Vulnerability Detected\""
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/cvt/ootb/repeat_fake_data.py"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 13,
+                  "endLine": 16,
+                  "endColumn": 66,
+                  "snippet": {
+                    "text": "            os.system(f\"cp {folder}/{c} {folder}/{new_class} -r\")\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 15,
+                  "endLine": 17,
+                  "snippet": {
+                    "text": "            new_class = f\"{i}_{c}\"\n            os.system(f\"cp {folder}/{c} {folder}/{new_class} -r\")\n\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "HIGH",
+            "issue_confidence": "HIGH"
+          }
+        },
+        {
+          "ruleId": "glog-76eed19f-38c8-4dcc-bf35-7a81b7364440",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "\"Shell Process Initiation: Potential Injection Vulnerability Detected\""
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/rnnt/ootb/inference/loadgen/version_generator.py"
+                },
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 15,
+                  "endLine": 43,
+                  "endColumn": 66,
+                  "snippet": {
+                    "text": "    git_rev = os.popen(git_command + \"rev-parse --short=10 HEAD\").read()\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 42,
+                  "endLine": 44,
+                  "snippet": {
+                    "text": "def generate_loadgen_version_definitions_git(ofile, git_command):\n    git_rev = os.popen(git_command + \"rev-parse --short=10 HEAD\").read()\n    git_commit_date = os.popen(git_command + \"log --format=\\\"%cI\\\" -n 1\").read()\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "HIGH",
+            "issue_confidence": "HIGH"
+          }
+        },
+        {
+          "ruleId": "glog-aa204ab1-f727-4abe-9c27-bd32b977c2b2",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "\"Shell Process Initiation: Potential Injection Vulnerability Detected\""
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/rnnt/ootb/inference/loadgen/version_generator.py"
+                },
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 23,
+                  "endLine": 44,
+                  "endColumn": 74,
+                  "snippet": {
+                    "text": "    git_commit_date = os.popen(git_command + \"log --format=\\\"%cI\\\" -n 1\").read()\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 43,
+                  "endLine": 45,
+                  "snippet": {
+                    "text": "    git_rev = os.popen(git_command + \"rev-parse --short=10 HEAD\").read()\n    git_commit_date = os.popen(git_command + \"log --format=\\\"%cI\\\" -n 1\").read()\n    git_status = os.popen(git_command + \"status -s -uno\").read()\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "HIGH",
+            "issue_confidence": "HIGH"
+          }
+        },
+        {
+          "ruleId": "glog-7f2d0ce7-4605-4903-9bba-e63a51f9488c",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "\"Shell Process Initiation: Potential Injection Vulnerability Detected\""
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/rnnt/ootb/inference/loadgen/version_generator.py"
+                },
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 18,
+                  "endLine": 45,
+                  "endColumn": 58,
+                  "snippet": {
+                    "text": "    git_status = os.popen(git_command + \"status -s -uno\").read()\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 44,
+                  "endLine": 46,
+                  "snippet": {
+                    "text": "    git_commit_date = os.popen(git_command + \"log --format=\\\"%cI\\\" -n 1\").read()\n    git_status = os.popen(git_command + \"status -s -uno\").read()\n    git_log = os.popen(\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "HIGH",
+            "issue_confidence": "HIGH"
+          }
+        }
+      ],
+      "newlineSequences": [
+        "\r\n",
+        "\n"
+      ]
+    }
+  ]
+}

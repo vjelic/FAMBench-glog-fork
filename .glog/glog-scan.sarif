@@ -12,30 +12,6 @@
           "informationUri": "https://www.glog.ai",
           "rules": [
             {
-              "id": "4635ff3b-135e-3d7f-a545-8d01d9ae3793",
-              "name": "resources.rules.prefer-apt-get",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.prefer-apt-get"
-              },
-              "fullDescription": {
-                "text": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "help": {
-                "text": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3027](https://github.com/hadolint/hadolint/wiki/DL3027)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.prefer-apt-get"
-                ]
-              }
-            },
-            {
               "id": "f0316d83-022c-3756-af33-393f4370b87b",
               "name": "resources.rules.use-workdir",
               "shortDescription": {
@@ -61,6 +37,30 @@
             },
             {
               "id": "d22a4965-52f7-3d4e-b176-5e6fab40bcf3",
+              "name": "resources.rules.prefer-apt-get",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.prefer-apt-get"
+              },
+              "fullDescription": {
+                "text": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "help": {
+                "text": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3027](https://github.com/hadolint/hadolint/wiki/DL3027)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.prefer-apt-get"
+                ]
+              }
+            },
+            {
+              "id": "4635ff3b-135e-3d7f-a545-8d01d9ae3793",
               "name": "resources.rules.prefer-apt-get",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.prefer-apt-get"
@@ -156,30 +156,6 @@
               }
             },
             {
-              "id": "328badac-9b68-3fb1-8cd1-39b05c8db5c5",
-              "name": "resources.rules.prefer-apt-get",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.prefer-apt-get"
-              },
-              "fullDescription": {
-                "text": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "help": {
-                "text": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3027](https://github.com/hadolint/hadolint/wiki/DL3027)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.prefer-apt-get"
-                ]
-              }
-            },
-            {
               "id": "35b3f628-9b1d-3482-8fa1-786bbe5ea7f5",
               "name": "resources.rules.missing-pip-no-cache-dir",
               "shortDescription": {
@@ -204,26 +180,26 @@
               }
             },
             {
-              "id": "2566f2bd-e933-38d8-a497-a80728bfda22",
-              "name": "resources.rules.missing-image-version",
+              "id": "328badac-9b68-3fb1-8cd1-39b05c8db5c5",
+              "name": "resources.rules.prefer-apt-get",
               "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-image-version"
+                "text": "Opengrep Finding: resources.rules.prefer-apt-get"
               },
               "fullDescription": {
-                "text": "Images should be tagged with an explicit version to produce deterministic container images."
+                "text": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged."
               },
               "defaultConfiguration": {
                 "enabled": true,
-                "level": "warning"
+                "level": "note"
               },
               "help": {
-                "text": "Images should be tagged with an explicit version to produce deterministic container images.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Images should be tagged with an explicit version to produce deterministic container images.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3006](https://github.com/hadolint/hadolint/wiki/DL3006)\n"
+                "text": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3027](https://github.com/hadolint/hadolint/wiki/DL3027)\n"
               },
               "properties": {
                 "precision": "very-high",
                 "tags": [
-                  "resources.rules.missing-image-version"
+                  "resources.rules.prefer-apt-get"
                 ]
               }
             },
@@ -248,6 +224,30 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.prefer-apt-get"
+                ]
+              }
+            },
+            {
+              "id": "2566f2bd-e933-38d8-a497-a80728bfda22",
+              "name": "resources.rules.missing-image-version",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.missing-image-version"
+              },
+              "fullDescription": {
+                "text": "Images should be tagged with an explicit version to produce deterministic container images."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Images should be tagged with an explicit version to produce deterministic container images.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Images should be tagged with an explicit version to produce deterministic container images.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3006](https://github.com/hadolint/hadolint/wiki/DL3006)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.missing-image-version"
                 ]
               }
             },
@@ -300,54 +300,6 @@
               }
             },
             {
-              "id": "7f17c3b5-ffe2-35e1-b038-2848b945a674",
-              "name": "resources.rules.dlint-catastrophic-redos",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
-              },
-              "fullDescription": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "help": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.dlint-catastrophic-redos"
-                ]
-              }
-            },
-            {
-              "id": "2bed2b48-c43d-3cf0-b89d-9a3ac5dc3c6d",
-              "name": "resources.rules.use-sys-exit",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.use-sys-exit"
-              },
-              "fullDescription": {
-                "text": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.use-sys-exit"
-                ]
-              }
-            },
-            {
               "id": "de814b3b-306c-3227-b7d7-30707bbbee8e",
               "name": "resources.rules.missing-pip-no-cache-dir",
               "shortDescription": {
@@ -396,7 +348,55 @@
               }
             },
             {
-              "id": "2c7c6e49-3116-35c6-9a2e-dd87c12a7b08",
+              "id": "7f17c3b5-ffe2-35e1-b038-2848b945a674",
+              "name": "resources.rules.dlint-catastrophic-redos",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
+              },
+              "fullDescription": {
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "help": {
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.dlint-catastrophic-redos"
+                ]
+              }
+            },
+            {
+              "id": "2bed2b48-c43d-3cf0-b89d-9a3ac5dc3c6d",
+              "name": "resources.rules.use-sys-exit",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.use-sys-exit"
+              },
+              "fullDescription": {
+                "text": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.use-sys-exit"
+                ]
+              }
+            },
+            {
+              "id": "34122146-afbe-327f-b185-6bc35e7d4662",
               "name": "resources.rules.dangerous-system-call",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.dangerous-system-call"
@@ -420,7 +420,7 @@
               }
             },
             {
-              "id": "34122146-afbe-327f-b185-6bc35e7d4662",
+              "id": "2c7c6e49-3116-35c6-9a2e-dd87c12a7b08",
               "name": "resources.rules.dangerous-system-call",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.dangerous-system-call"
@@ -516,26 +516,26 @@
               }
             },
             {
-              "id": "d9699616-9b32-34c2-b613-f45523196b47",
-              "name": "resources.rules.open-never-closed",
+              "id": "4ae31740-0c61-3f14-af1a-daadec8f0a3d",
+              "name": "resources.rules.prefer-copy-over-add",
               "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.open-never-closed"
+                "text": "Opengrep Finding: resources.rules.prefer-copy-over-add"
               },
               "fullDescription": {
-                "text": "file object opened without corresponding close"
+                "text": "The ADD command will accept and include files from a URL.\nThis potentially exposes the container to a man-in-the-middle attack.\nSince ADD can have this and other unexpected side effects, the use of\nthe more explicit COPY command is preferred.\n"
               },
               "defaultConfiguration": {
                 "enabled": true,
-                "level": "error"
+                "level": "note"
               },
               "help": {
-                "text": "file object opened without corresponding close\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "file object opened without corresponding close\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+                "text": "The ADD command will accept and include files from a URL.\nThis potentially exposes the container to a man-in-the-middle attack.\nSince ADD can have this and other unexpected side effects, the use of\nthe more explicit COPY command is preferred.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "The ADD command will accept and include files from a URL.\nThis potentially exposes the container to a man-in-the-middle attack.\nSince ADD can have this and other unexpected side effects, the use of\nthe more explicit COPY command is preferred.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://snyk.io/blog/10-docker-image-security-best-practices/](https://snyk.io/blog/10-docker-image-security-best-practices/)\n"
               },
               "properties": {
                 "precision": "very-high",
                 "tags": [
-                  "resources.rules.open-never-closed"
+                  "resources.rules.prefer-copy-over-add"
                 ]
               }
             },
@@ -565,56 +565,31 @@
               }
             },
             {
-              "id": "4ae31740-0c61-3f14-af1a-daadec8f0a3d",
-              "name": "resources.rules.prefer-copy-over-add",
+              "id": "d9699616-9b32-34c2-b613-f45523196b47",
+              "name": "resources.rules.open-never-closed",
               "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.prefer-copy-over-add"
+                "text": "Opengrep Finding: resources.rules.open-never-closed"
               },
               "fullDescription": {
-                "text": "The ADD command will accept and include files from a URL.\nThis potentially exposes the container to a man-in-the-middle attack.\nSince ADD can have this and other unexpected side effects, the use of\nthe more explicit COPY command is preferred.\n"
+                "text": "file object opened without corresponding close"
               },
               "defaultConfiguration": {
                 "enabled": true,
-                "level": "note"
+                "level": "error"
               },
               "help": {
-                "text": "The ADD command will accept and include files from a URL.\nThis potentially exposes the container to a man-in-the-middle attack.\nSince ADD can have this and other unexpected side effects, the use of\nthe more explicit COPY command is preferred.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "The ADD command will accept and include files from a URL.\nThis potentially exposes the container to a man-in-the-middle attack.\nSince ADD can have this and other unexpected side effects, the use of\nthe more explicit COPY command is preferred.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://snyk.io/blog/10-docker-image-security-best-practices/](https://snyk.io/blog/10-docker-image-security-best-practices/)\n"
+                "text": "file object opened without corresponding close\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "file object opened without corresponding close\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
               },
               "properties": {
                 "precision": "very-high",
                 "tags": [
-                  "resources.rules.prefer-copy-over-add"
+                  "resources.rules.open-never-closed"
                 ]
               }
             },
             {
               "id": "1c1eb4da-5cd3-3beb-995a-00cd91088a2b",
-              "name": "trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
-              "shortDescription": {
-                "text": "Opengrep Finding: trailofbits.python.automatic-memory-pinning.automatic-memory-pinning"
-              },
-              "fullDescription": {
-                "text": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "helpUri": "https://semgrep.dev/r/trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
-              "help": {
-                "text": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/trailofbits.python.automatic-memory-pinning.automatic-memory-pinning)\n - [https://pytorch.org/docs/stable/data.html#memory-pinning](https://pytorch.org/docs/stable/data.html#memory-pinning)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "trailofbits.python.automatic-memory-pinning.automatic-memory-pinning"
-                ]
-              }
-            },
-            {
-              "id": "e0c23c9a-3b21-39ae-86ad-9d9249c5eae2",
               "name": "trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
               "shortDescription": {
                 "text": "Opengrep Finding: trailofbits.python.automatic-memory-pinning.automatic-memory-pinning"
@@ -688,6 +663,31 @@
               }
             },
             {
+              "id": "e0c23c9a-3b21-39ae-86ad-9d9249c5eae2",
+              "name": "trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
+              "shortDescription": {
+                "text": "Opengrep Finding: trailofbits.python.automatic-memory-pinning.automatic-memory-pinning"
+              },
+              "fullDescription": {
+                "text": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "helpUri": "https://semgrep.dev/r/trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
+              "help": {
+                "text": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/trailofbits.python.automatic-memory-pinning.automatic-memory-pinning)\n - [https://pytorch.org/docs/stable/data.html#memory-pinning](https://pytorch.org/docs/stable/data.html#memory-pinning)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "trailofbits.python.automatic-memory-pinning.automatic-memory-pinning"
+                ]
+              }
+            },
+            {
               "id": "2cfbc209-d820-3a77-ae0e-ad355362a7f9",
               "name": "resources.rules.return-not-in-function",
               "shortDescription": {
@@ -736,30 +736,6 @@
               }
             },
             {
-              "id": "a50942c5-190c-34b4-8db0-ba31642d8efb",
-              "name": "resources.rules.return-not-in-function",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.return-not-in-function"
-              },
-              "fullDescription": {
-                "text": "`return` only makes sense inside a function"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "`return` only makes sense inside a function\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "`return` only makes sense inside a function\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.return-not-in-function"
-                ]
-              }
-            },
-            {
               "id": "cfd3fc8e-554e-3ac1-8780-d9604ff62a17",
               "name": "resources.rules.return-in-init",
               "shortDescription": {
@@ -780,6 +756,30 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.return-in-init"
+                ]
+              }
+            },
+            {
+              "id": "a50942c5-190c-34b4-8db0-ba31642d8efb",
+              "name": "resources.rules.return-not-in-function",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.return-not-in-function"
+              },
+              "fullDescription": {
+                "text": "`return` only makes sense inside a function"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "`return` only makes sense inside a function\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "`return` only makes sense inside a function\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.return-not-in-function"
                 ]
               }
             },
@@ -1032,30 +1032,6 @@
               }
             },
             {
-              "id": "f7d59fd2-bc21-3edf-bcf0-5396c76e6be7",
-              "name": "resources.rules.eqeq-is-bad",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.eqeq-is-bad"
-              },
-              "fullDescription": {
-                "text": "Detected a useless comparison operation `$X == $X` or `$X != $X`. This\noperation is always true.\nIf testing for floating point NaN, use `math.isnan`, or\n`cmath.isnan` if the number is complex.\n"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "help": {
-                "text": "Detected a useless comparison operation `$X == $X` or `$X != $X`. This\noperation is always true.\nIf testing for floating point NaN, use `math.isnan`, or\n`cmath.isnan` if the number is complex.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Detected a useless comparison operation `$X == $X` or `$X != $X`. This\noperation is always true.\nIf testing for floating point NaN, use `math.isnan`, or\n`cmath.isnan` if the number is complex.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.eqeq-is-bad"
-                ]
-              }
-            },
-            {
               "id": "c8f4bfc3-e17f-3ae5-9905-e7c97b7c600d",
               "name": "trailofbits.python.pickles-in-pytorch.pickles-in-pytorch",
               "shortDescription": {
@@ -1077,6 +1053,30 @@
                 "precision": "very-high",
                 "tags": [
                   "trailofbits.python.pickles-in-pytorch.pickles-in-pytorch"
+                ]
+              }
+            },
+            {
+              "id": "f7d59fd2-bc21-3edf-bcf0-5396c76e6be7",
+              "name": "resources.rules.eqeq-is-bad",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.eqeq-is-bad"
+              },
+              "fullDescription": {
+                "text": "Detected a useless comparison operation `$X == $X` or `$X != $X`. This\noperation is always true.\nIf testing for floating point NaN, use `math.isnan`, or\n`cmath.isnan` if the number is complex.\n"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "help": {
+                "text": "Detected a useless comparison operation `$X == $X` or `$X != $X`. This\noperation is always true.\nIf testing for floating point NaN, use `math.isnan`, or\n`cmath.isnan` if the number is complex.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Detected a useless comparison operation `$X == $X` or `$X != $X`. This\noperation is always true.\nIf testing for floating point NaN, use `math.isnan`, or\n`cmath.isnan` if the number is complex.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.eqeq-is-bad"
                 ]
               }
             },
@@ -1131,7 +1131,7 @@
               }
             },
             {
-              "id": "af6d1d3f-1302-355d-b4a5-68d4da58f6ed",
+              "id": "c8eb6f69-109f-3b0c-b42b-6d2970292586",
               "name": "trailofbits.python.numpy-in-pytorch-modules.numpy-in-pytorch-modules",
               "shortDescription": {
                 "text": "Opengrep Finding: trailofbits.python.numpy-in-pytorch-modules.numpy-in-pytorch-modules"
@@ -1156,7 +1156,7 @@
               }
             },
             {
-              "id": "c8eb6f69-109f-3b0c-b42b-6d2970292586",
+              "id": "af6d1d3f-1302-355d-b4a5-68d4da58f6ed",
               "name": "trailofbits.python.numpy-in-pytorch-modules.numpy-in-pytorch-modules",
               "shortDescription": {
                 "text": "Opengrep Finding: trailofbits.python.numpy-in-pytorch-modules.numpy-in-pytorch-modules"
@@ -1325,30 +1325,6 @@
               }
             },
             {
-              "id": "d14adb8f-062b-3fd3-95f6-e715fbd8d065",
-              "name": "resources.rules.raptor-signed-unsigned-conversion",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
-              },
-              "fullDescription": {
-                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://cwe.mitre.org/data/definitions/195](https://cwe.mitre.org/data/definitions/195)\n - [https://cwe.mitre.org/data/definitions/196](https://cwe.mitre.org/data/definitions/196)\n - [https://cwe.mitre.org/data/definitions/194](https://cwe.mitre.org/data/definitions/194)\n - [https://cwe.mitre.org/data/definitions/191](https://cwe.mitre.org/data/definitions/191)\n - [https://cwe.mitre.org/data/definitions/681](https://cwe.mitre.org/data/definitions/681)\n - [https://cwe.mitre.org/data/definitions/789](https://cwe.mitre.org/data/definitions/789)\n - [https://g.co/kgs/PCHQjJ](https://g.co/kgs/PCHQjJ)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n - [https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf](https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf)\n - [http://www.phrack.org/issues/60/10.html#article](http://www.phrack.org/issues/60/10.html#article)\n - [https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples](https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.raptor-signed-unsigned-conversion"
-                ]
-              }
-            },
-            {
               "id": "37e4378f-817e-3465-958b-ee890bbc1e87",
               "name": "resources.rules.raptor-suspicious-assert",
               "shortDescription": {
@@ -1369,6 +1345,30 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.raptor-suspicious-assert"
+                ]
+              }
+            },
+            {
+              "id": "d14adb8f-062b-3fd3-95f6-e715fbd8d065",
+              "name": "resources.rules.raptor-signed-unsigned-conversion",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
+              },
+              "fullDescription": {
+                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://cwe.mitre.org/data/definitions/195](https://cwe.mitre.org/data/definitions/195)\n - [https://cwe.mitre.org/data/definitions/196](https://cwe.mitre.org/data/definitions/196)\n - [https://cwe.mitre.org/data/definitions/194](https://cwe.mitre.org/data/definitions/194)\n - [https://cwe.mitre.org/data/definitions/191](https://cwe.mitre.org/data/definitions/191)\n - [https://cwe.mitre.org/data/definitions/681](https://cwe.mitre.org/data/definitions/681)\n - [https://cwe.mitre.org/data/definitions/789](https://cwe.mitre.org/data/definitions/789)\n - [https://g.co/kgs/PCHQjJ](https://g.co/kgs/PCHQjJ)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n - [https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf](https://www.sei.cmu.edu/downloads/sei-cert-c-coding-standard-2016-v01.pdf)\n - [http://www.phrack.org/issues/60/10.html#article](http://www.phrack.org/issues/60/10.html#article)\n - [https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples](https://docs.microsoft.com/en-us/cpp/sanitizers/asan-error-examples)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.raptor-signed-unsigned-conversion"
                 ]
               }
             },
@@ -1493,7 +1493,7 @@
               }
             },
             {
-              "id": "d90e1fa6-dcec-3011-9a62-3c0f65d51bde",
+              "id": "ed307c26-a0cf-30b1-b1c8-5cef44587381",
               "name": "resources.rules.pass-body-fn",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.pass-body-fn"
@@ -1517,7 +1517,7 @@
               }
             },
             {
-              "id": "ed307c26-a0cf-30b1-b1c8-5cef44587381",
+              "id": "d90e1fa6-dcec-3011-9a62-3c0f65d51bde",
               "name": "resources.rules.pass-body-fn",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.pass-body-fn"
@@ -1733,7 +1733,7 @@
               }
             },
             {
-              "id": "b2426f79-d616-3130-bfbe-dcb9d6f45cb8",
+              "id": "5941efe1-33de-304f-8134-ac48b400a616",
               "name": "resources.rules.raptor-signed-unsigned-conversion",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
@@ -1757,7 +1757,7 @@
               }
             },
             {
-              "id": "5941efe1-33de-304f-8134-ac48b400a616",
+              "id": "b2426f79-d616-3130-bfbe-dcb9d6f45cb8",
               "name": "resources.rules.raptor-signed-unsigned-conversion",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
@@ -3126,6 +3126,30 @@
               }
             },
             {
+              "id": "cade9b73-d729-3c3c-b9b3-6b5d0573e065",
+              "name": "resources.rules.insecure-tarfile-use",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.insecure-tarfile-use"
+              },
+              "fullDescription": {
+                "text": "The Python 'tarfile' extract|extractall functions are vulnerable to arbitrary file overwrites"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "The Python 'tarfile' extract|extractall functions are vulnerable to arbitrary file overwrites\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "The Python 'tarfile' extract|extractall functions are vulnerable to arbitrary file overwrites\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.insecure-tarfile-use"
+                ]
+              }
+            },
+            {
               "id": "4cd3e327-b1f5-3f1e-97b7-82f9da2025c5",
               "name": "trailofbits.python.pickles-in-pytorch.pickles-in-pytorch",
               "shortDescription": {
@@ -3147,30 +3171,6 @@
                 "precision": "very-high",
                 "tags": [
                   "trailofbits.python.pickles-in-pytorch.pickles-in-pytorch"
-                ]
-              }
-            },
-            {
-              "id": "cade9b73-d729-3c3c-b9b3-6b5d0573e065",
-              "name": "resources.rules.insecure-tarfile-use",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.insecure-tarfile-use"
-              },
-              "fullDescription": {
-                "text": "The Python 'tarfile' extract|extractall functions are vulnerable to arbitrary file overwrites"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "The Python 'tarfile' extract|extractall functions are vulnerable to arbitrary file overwrites\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "The Python 'tarfile' extract|extractall functions are vulnerable to arbitrary file overwrites\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.insecure-tarfile-use"
                 ]
               }
             },
@@ -3319,30 +3319,6 @@
               }
             },
             {
-              "id": "3bf7f541-b35a-3815-93c2-c07f51f5a326",
-              "name": "resources.rules.insecure-tarfile-use",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.insecure-tarfile-use"
-              },
-              "fullDescription": {
-                "text": "The Python 'tarfile' extract|extractall functions are vulnerable to arbitrary file overwrites"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "The Python 'tarfile' extract|extractall functions are vulnerable to arbitrary file overwrites\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "The Python 'tarfile' extract|extractall functions are vulnerable to arbitrary file overwrites\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.insecure-tarfile-use"
-                ]
-              }
-            },
-            {
               "id": "c12a1b9b-1b7a-345e-9327-adcf5f86d968",
               "name": "resources.rules.dlint-catastrophic-redos",
               "shortDescription": {
@@ -3363,6 +3339,30 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.dlint-catastrophic-redos"
+                ]
+              }
+            },
+            {
+              "id": "3bf7f541-b35a-3815-93c2-c07f51f5a326",
+              "name": "resources.rules.insecure-tarfile-use",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.insecure-tarfile-use"
+              },
+              "fullDescription": {
+                "text": "The Python 'tarfile' extract|extractall functions are vulnerable to arbitrary file overwrites"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "The Python 'tarfile' extract|extractall functions are vulnerable to arbitrary file overwrites\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "The Python 'tarfile' extract|extractall functions are vulnerable to arbitrary file overwrites\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.insecure-tarfile-use"
                 ]
               }
             },
@@ -4126,37 +4126,6 @@
       "language": "en-US",
       "results": [
         {
-          "ruleId": "4635ff3b-135e-3d7f-a545-8d01d9ae3793",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/bevt/ootb/Dockerfile.cuda",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 6,
-                  "startColumn": 1,
-                  "endLine": 6,
-                  "endColumn": 8,
-                  "snippet": {
-                    "text": "RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "20035bb0d6bac16c351e54f0ce5b2b52b3bda3fb26eaeb112b282d850904ae424fc65b5f16bf1be76731d7080460664129388a703cd37122f9ab841c73862f93_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "f0316d83-022c-3756-af33-393f4370b87b",
           "kind": "fail",
           "level": "warning",
@@ -4215,6 +4184,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "20035bb0d6bac16c351e54f0ce5b2b52b3bda3fb26eaeb112b282d850904ae424fc65b5f16bf1be76731d7080460664129388a703cd37122f9ab841c73862f93_1"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "4635ff3b-135e-3d7f-a545-8d01d9ae3793",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/bevt/ootb/Dockerfile.cuda",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 1,
+                  "endLine": 6,
+                  "endColumn": 8,
+                  "snippet": {
+                    "text": "RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "20035bb0d6bac16c351e54f0ce5b2b52b3bda3fb26eaeb112b282d850904ae424fc65b5f16bf1be76731d7080460664129388a703cd37122f9ab841c73862f93_0"
           },
           "properties": {}
         },
@@ -4312,37 +4312,6 @@
           "properties": {}
         },
         {
-          "ruleId": "328badac-9b68-3fb1-8cd1-39b05c8db5c5",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/bevt/ootb/Dockerfile.cuda",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 24,
-                  "startColumn": 1,
-                  "endLine": 24,
-                  "endColumn": 8,
-                  "snippet": {
-                    "text": "RUN apt install -y libgl1 libglib2.0-0"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "20035bb0d6bac16c351e54f0ce5b2b52b3bda3fb26eaeb112b282d850904ae424fc65b5f16bf1be76731d7080460664129388a703cd37122f9ab841c73862f93_2"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "35b3f628-9b1d-3482-8fa1-786bbe5ea7f5",
           "kind": "fail",
           "level": "warning",
@@ -4374,33 +4343,33 @@
           "properties": {}
         },
         {
-          "ruleId": "2566f2bd-e933-38d8-a497-a80728bfda22",
+          "ruleId": "328badac-9b68-3fb1-8cd1-39b05c8db5c5",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "Images should be tagged with an explicit version to produce deterministic container images."
+            "text": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged."
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "benchmarks/bevt/ootb/Dockerfile.rocm",
+                  "uri": "benchmarks/bevt/ootb/Dockerfile.cuda",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 2,
+                  "startLine": 24,
                   "startColumn": 1,
-                  "endLine": 2,
-                  "endColumn": 10,
+                  "endLine": 24,
+                  "endColumn": 8,
                   "snippet": {
-                    "text": "FROM rocm/pytorch:rocm5.2_ubuntu20.04_py3.7_pytorch_1.11.0"
+                    "text": "RUN apt install -y libgl1 libglib2.0-0"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "cbf61c7740e53cb23358b7995221db7611fd6a6e5f7fbae97623739e984d956deed6388a4625bef130f9fc19e26cdf50e5988796ae12b4b6700d7f596addd82c_0"
+            "matchBasedId/v1": "20035bb0d6bac16c351e54f0ce5b2b52b3bda3fb26eaeb112b282d850904ae424fc65b5f16bf1be76731d7080460664129388a703cd37122f9ab841c73862f93_2"
           },
           "properties": {}
         },
@@ -4432,6 +4401,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "20035bb0d6bac16c351e54f0ce5b2b52b3bda3fb26eaeb112b282d850904ae424fc65b5f16bf1be76731d7080460664129388a703cd37122f9ab841c73862f93_3"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "2566f2bd-e933-38d8-a497-a80728bfda22",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Images should be tagged with an explicit version to produce deterministic container images."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/bevt/ootb/Dockerfile.rocm",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2,
+                  "endColumn": 10,
+                  "snippet": {
+                    "text": "FROM rocm/pytorch:rocm5.2_ubuntu20.04_py3.7_pytorch_1.11.0"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "cbf61c7740e53cb23358b7995221db7611fd6a6e5f7fbae97623739e984d956deed6388a4625bef130f9fc19e26cdf50e5988796ae12b4b6700d7f596addd82c_0"
           },
           "properties": {}
         },
@@ -4498,68 +4498,6 @@
           "properties": {}
         },
         {
-          "ruleId": "7f17c3b5-ffe2-35e1-b038-2848b945a674",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Regex `\".*Speed (?P<performance>[0-9]*\\.[0-9]*) samples/s.*\"` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/cvt/ootb/cvt_parser.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 29,
-                  "endLine": 16,
-                  "endColumn": 10,
-                  "snippet": {
-                    "text": "        performance_regex = re.compile(\n            \".*Speed (?P<performance>[0-9]*\\.[0-9]*) samples/s.*\"\n        )"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "ab766931b0eb7a1d722cdbc59002ccc2a73b81f95d418355dad071cc2e649930bf59ebadc36a2dd4787dfef0b3c841c969057d1fefe4dabd7caf37c8caa1dc43_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "2bed2b48-c43d-3cf0-b89d-9a3ac5dc3c6d",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/cudnn_multihead_attn/multihead_attn_make_ref.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 239,
-                  "startColumn": 9,
-                  "endLine": 239,
-                  "endColumn": 15,
-                  "snippet": {
-                    "text": "        exit()"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "ca744cdf3162cf1abdd900b01137753fde52e052d77fb95b1cbd2ad084bef1f4a3020d002d0db581c6fac8ec49479692b5d8de836246aeefd1520845ece7e345_1"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "de814b3b-306c-3227-b7d7-30707bbbee8e",
           "kind": "fail",
           "level": "warning",
@@ -4622,33 +4560,64 @@
           "properties": {}
         },
         {
-          "ruleId": "2c7c6e49-3116-35c6-9a2e-dd87c12a7b08",
+          "ruleId": "7f17c3b5-ffe2-35e1-b038-2848b945a674",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability."
+            "text": "Regex `\".*Speed (?P<performance>[0-9]*\\.[0-9]*) samples/s.*\"` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "benchmarks/cvt/ootb/repeat_fake_data.py",
+                  "uri": "benchmarks/cvt/ootb/cvt_parser.py",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 22,
-                  "startColumn": 13,
-                  "endLine": 22,
-                  "endColumn": 56,
+                  "startLine": 14,
+                  "startColumn": 29,
+                  "endLine": 16,
+                  "endColumn": 10,
                   "snippet": {
-                    "text": "            os.system(f\"rm {folder}/{class_to_del} -r\")"
+                    "text": "        performance_regex = re.compile(\n            \".*Speed (?P<performance>[0-9]*\\.[0-9]*) samples/s.*\"\n        )"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "c74d36af0a0feda0020d1562f49f64f0a416482e02bc1b8afe139faff7bb264303a4a6395e2d6547b045cd6c808bb41b4562d5daf9826e408076e2edaad152aa_1"
+            "matchBasedId/v1": "ab766931b0eb7a1d722cdbc59002ccc2a73b81f95d418355dad071cc2e649930bf59ebadc36a2dd4787dfef0b3c841c969057d1fefe4dabd7caf37c8caa1dc43_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "2bed2b48-c43d-3cf0-b89d-9a3ac5dc3c6d",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/cudnn_multihead_attn/multihead_attn_make_ref.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 239,
+                  "startColumn": 9,
+                  "endLine": 239,
+                  "endColumn": 15,
+                  "snippet": {
+                    "text": "        exit()"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "ca744cdf3162cf1abdd900b01137753fde52e052d77fb95b1cbd2ad084bef1f4a3020d002d0db581c6fac8ec49479692b5d8de836246aeefd1520845ece7e345_1"
           },
           "properties": {}
         },
@@ -4680,6 +4649,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "c74d36af0a0feda0020d1562f49f64f0a416482e02bc1b8afe139faff7bb264303a4a6395e2d6547b045cd6c808bb41b4562d5daf9826e408076e2edaad152aa_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "2c7c6e49-3116-35c6-9a2e-dd87c12a7b08",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/cvt/ootb/repeat_fake_data.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 13,
+                  "endLine": 22,
+                  "endColumn": 56,
+                  "snippet": {
+                    "text": "            os.system(f\"rm {folder}/{class_to_del} -r\")"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "c74d36af0a0feda0020d1562f49f64f0a416482e02bc1b8afe139faff7bb264303a4a6395e2d6547b045cd6c808bb41b4562d5daf9826e408076e2edaad152aa_1"
           },
           "properties": {}
         },
@@ -4777,33 +4777,33 @@
           "properties": {}
         },
         {
-          "ruleId": "d9699616-9b32-34c2-b613-f45523196b47",
+          "ruleId": "4ae31740-0c61-3f14-af1a-daadec8f0a3d",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "file object opened without corresponding close"
+            "text": "The ADD command will accept and include files from a URL.\nThis potentially exposes the container to a man-in-the-middle attack.\nSince ADD can have this and other unexpected side effects, the use of\nthe more explicit COPY command is preferred.\n"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "benchmarks/dlrm/ootb/data_loader_terabyte.py",
+                  "uri": "benchmarks/dlrm/ootb/Dockerfile",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 216,
-                  "startColumn": 9,
-                  "endLine": 216,
-                  "endColumn": 42,
+                  "startLine": 15,
+                  "startColumn": 1,
+                  "endLine": 15,
+                  "endColumn": 4,
                   "snippet": {
-                    "text": "        self.file = open(data_file, 'rb')"
+                    "text": "ADD . ."
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "82d8b8d7045f347a3a3cf8b52c0a8dba635029c64693475463e0d728b605918fd136d748c4a76034412a4d4323c4a79f64638b8b8f746def0e3af3cf468b5c60_0"
+            "matchBasedId/v1": "8524fc71be1e5634ca2c8e37cb91294f516c82994d391758589d5843964d6e47538ac27de413e5f9c7bcaba4ff8ade6a06415163539473bf90ba017032292204_1"
           },
           "properties": {}
         },
@@ -4839,33 +4839,33 @@
           "properties": {}
         },
         {
-          "ruleId": "4ae31740-0c61-3f14-af1a-daadec8f0a3d",
+          "ruleId": "d9699616-9b32-34c2-b613-f45523196b47",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "The ADD command will accept and include files from a URL.\nThis potentially exposes the container to a man-in-the-middle attack.\nSince ADD can have this and other unexpected side effects, the use of\nthe more explicit COPY command is preferred.\n"
+            "text": "file object opened without corresponding close"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "benchmarks/dlrm/ootb/Dockerfile",
+                  "uri": "benchmarks/dlrm/ootb/data_loader_terabyte.py",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 15,
-                  "startColumn": 1,
-                  "endLine": 15,
-                  "endColumn": 4,
+                  "startLine": 216,
+                  "startColumn": 9,
+                  "endLine": 216,
+                  "endColumn": 42,
                   "snippet": {
-                    "text": "ADD . ."
+                    "text": "        self.file = open(data_file, 'rb')"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "8524fc71be1e5634ca2c8e37cb91294f516c82994d391758589d5843964d6e47538ac27de413e5f9c7bcaba4ff8ade6a06415163539473bf90ba017032292204_1"
+            "matchBasedId/v1": "82d8b8d7045f347a3a3cf8b52c0a8dba635029c64693475463e0d728b605918fd136d748c4a76034412a4d4323c4a79f64638b8b8f746def0e3af3cf468b5c60_0"
           },
           "properties": {}
         },
@@ -4897,37 +4897,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "59b1bdbdcb1b9df7a2818d1330b6e811043c828b6bdd5b60924b201e227b7e87b6b033f9a357d16438b8e7628d36810128b46c8d310764124cd8d83b0db09a01_1"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "e0c23c9a-3b21-39ae-86ad-9d9249c5eae2",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/dlrm/ootb/dlrm_data_caffe2.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 284,
-                  "startColumn": 23,
-                  "endLine": 292,
-                  "endColumn": 10,
-                  "snippet": {
-                    "text": "        test_loader = torch.utils.data.DataLoader(\n            test_data,\n            batch_size=test_mini_batch_size,\n            shuffle=False,\n            num_workers=0,\n            collate_fn=collate_wrapper_criteo,\n            pin_memory=False,\n            drop_last=False,  # True\n        )"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "e14c2edac26a53d47744e608ddc50b99e805f05860aa0784e3a80cf5471b148dab15461703fb4453a04da415db83d105a12cea02ea840f3888dbdb4ce9db213f_1"
           },
           "properties": {}
         },
@@ -4994,6 +4963,37 @@
           "properties": {}
         },
         {
+          "ruleId": "e0c23c9a-3b21-39ae-86ad-9d9249c5eae2",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/dlrm/ootb/dlrm_data_caffe2.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 284,
+                  "startColumn": 23,
+                  "endLine": 292,
+                  "endColumn": 10,
+                  "snippet": {
+                    "text": "        test_loader = torch.utils.data.DataLoader(\n            test_data,\n            batch_size=test_mini_batch_size,\n            shuffle=False,\n            num_workers=0,\n            collate_fn=collate_wrapper_criteo,\n            pin_memory=False,\n            drop_last=False,  # True\n        )"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "e14c2edac26a53d47744e608ddc50b99e805f05860aa0784e3a80cf5471b148dab15461703fb4453a04da415db83d105a12cea02ea840f3888dbdb4ce9db213f_1"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "2cfbc209-d820-3a77-ae0e-ad355362a7f9",
           "kind": "fail",
           "level": "warning",
@@ -5056,37 +5056,6 @@
           "properties": {}
         },
         {
-          "ruleId": "a50942c5-190c-34b4-8db0-ba31642d8efb",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "`return` only makes sense inside a function"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/dlrm/ootb/dlrm_data_pytorch.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1288,
-                  "startColumn": 31,
-                  "endLine": 1288,
-                  "endColumn": 54,
-                  "snippet": {
-                    "text": "        map(lambda tuple_x_k: tuple_x_k[1] / float(l), dc)"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "2c8e1fdd99166d5717b8b7827a0da10318684c286e40accf1788d59cd4942b04ba09729733cd1b6e7fafe8c0be9cc538a7ff3fdb392dfab7923da1814c57033d_1"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "cfd3fc8e-554e-3ac1-8780-d9604ff62a17",
           "kind": "fail",
           "level": "warning",
@@ -5114,6 +5083,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "56f76ed41245b12bc1ce7b5f9b3a6586ef64a31a602502e62cecdab4bebbd8573b35692a618a385f573911db2fb2ab74762b57cdac212c43409ddfbf19c51619_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "a50942c5-190c-34b4-8db0-ba31642d8efb",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "`return` only makes sense inside a function"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/dlrm/ootb/dlrm_data_pytorch.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1288,
+                  "startColumn": 31,
+                  "endLine": 1288,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "        map(lambda tuple_x_k: tuple_x_k[1] / float(l), dc)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "2c8e1fdd99166d5717b8b7827a0da10318684c286e40accf1788d59cd4942b04ba09729733cd1b6e7fafe8c0be9cc538a7ff3fdb392dfab7923da1814c57033d_1"
           },
           "properties": {}
         },
@@ -5428,37 +5428,6 @@
           "properties": {}
         },
         {
-          "ruleId": "f7d59fd2-bc21-3edf-bcf0-5396c76e6be7",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "output_dir == output_dir is a useless equality check"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/dlrm/ootb/tools/visualize.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 942,
-                  "startColumn": 8,
-                  "endLine": 942,
-                  "endColumn": 24,
-                  "snippet": {
-                    "text": "    if output_dir == \"\":"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "a381ea42b65dfbab61b03d5817cfd395bf136ca368aed9312813b312e5bfe5d53f03a8845e1ce8588c960ed8a99aaa53117a719780a6716c5e76b562cd0ec97c_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "c8f4bfc3-e17f-3ae5-9905-e7c97b7c600d",
           "kind": "fail",
           "level": "warning",
@@ -5486,6 +5455,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "b58316e5c77b7b36431140a767213f3d74069c3ac4981656973ad11efd14d0debf7015ea9ad22a19e98a94694cc6cf32bcd6e01baa8a12672b7b38e11e203ff1_3"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "f7d59fd2-bc21-3edf-bcf0-5396c76e6be7",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "output_dir == output_dir is a useless equality check"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/dlrm/ootb/tools/visualize.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 942,
+                  "startColumn": 8,
+                  "endLine": 942,
+                  "endColumn": 24,
+                  "snippet": {
+                    "text": "    if output_dir == \"\":"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "a381ea42b65dfbab61b03d5817cfd395bf136ca368aed9312813b312e5bfe5d53f03a8845e1ce8588c960ed8a99aaa53117a719780a6716c5e76b562cd0ec97c_0"
           },
           "properties": {}
         },
@@ -5552,37 +5552,6 @@
           "properties": {}
         },
         {
-          "ruleId": "af6d1d3f-1302-355d-b4a5-68d4da58f6ed",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Usage of NumPy library inside PyTorch `QREmbeddingBag` module was found. Avoid mixing these libraries for efficiency and proper ONNX loading"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/dlrm/ootb/tricks/qr_embedding_bag.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 153,
-                  "startColumn": 41,
-                  "endLine": 153,
-                  "endColumn": 73,
-                  "snippet": {
-                    "text": "        nn.init.uniform_(self.weight_q, np.sqrt(1 / self.num_categories))"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "3cccc6174746288578ef6e2d64a14143119280a5ae077234012166db1f4cc548120622842b5900f5ad7115cdffca4a33a29687531433421be13d2496aef77136_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "c8eb6f69-109f-3b0c-b42b-6d2970292586",
           "kind": "fail",
           "level": "warning",
@@ -5610,6 +5579,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "3cccc6174746288578ef6e2d64a14143119280a5ae077234012166db1f4cc548120622842b5900f5ad7115cdffca4a33a29687531433421be13d2496aef77136_1"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "af6d1d3f-1302-355d-b4a5-68d4da58f6ed",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Usage of NumPy library inside PyTorch `QREmbeddingBag` module was found. Avoid mixing these libraries for efficiency and proper ONNX loading"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/dlrm/ootb/tricks/qr_embedding_bag.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 153,
+                  "startColumn": 41,
+                  "endLine": 153,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "        nn.init.uniform_(self.weight_q, np.sqrt(1 / self.num_categories))"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "3cccc6174746288578ef6e2d64a14143119280a5ae077234012166db1f4cc548120622842b5900f5ad7115cdffca4a33a29687531433421be13d2496aef77136_0"
           },
           "properties": {}
         },
@@ -5800,37 +5800,6 @@
           "properties": {}
         },
         {
-          "ruleId": "d14adb8f-062b-3fd3-95f6-e715fbd8d065",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/rnnt/ootb/inference/loadgen/benchmark/repro.cpp",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 118,
-                  "startColumn": 12,
-                  "endLine": 118,
-                  "endColumn": 25,
-                  "snippet": {
-                    "text": "    size_t actualSize{0};"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "f261da0fdbc2caef70094e307834b5f91c0a4a15b042e82c0126143f123f42107d0ec292fab60e72427148443e22ca498d3776e253ec19905842a7d257c15a9b_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "37e4378f-817e-3465-958b-ee890bbc1e87",
           "kind": "fail",
           "level": "warning",
@@ -5858,6 +5827,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "e24cef7a736824c99f27d9b6dea6a1d399f2400285b0626ec04f8b9a57a6a9efc1d45f1cb79ad9281f720f60320915887c235c133c3e46a3b1039c2357ce9347_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "d14adb8f-062b-3fd3-95f6-e715fbd8d065",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/rnnt/ootb/inference/loadgen/benchmark/repro.cpp",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 118,
+                  "startColumn": 12,
+                  "endLine": 118,
+                  "endColumn": 25,
+                  "snippet": {
+                    "text": "    size_t actualSize{0};"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "f261da0fdbc2caef70094e307834b5f91c0a4a15b042e82c0126143f123f42107d0ec292fab60e72427148443e22ca498d3776e253ec19905842a7d257c15a9b_0"
           },
           "properties": {}
         },
@@ -6017,37 +6017,6 @@
           "properties": {}
         },
         {
-          "ruleId": "d90e1fa6-dcec-3011-9a62-3c0f65d51bde",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "`pass` is the body of function flush_queries. Consider removing this or raise NotImplementedError() if this is a TODO"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/rnnt/ootb/inference/loadgen/demos/py_demo_multi_stream.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 58,
-                  "startColumn": 1,
-                  "endLine": 59,
-                  "endColumn": 9,
-                  "snippet": {
-                    "text": "def flush_queries():\n    pass"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "f3cf6cc5fdd40012aa7affff739849c982deba83afda6e1f5d1c5cdf6f2868e610505812188bca76445ef362ec17fcaa6ae27f142fada6bcf2bd72b7385ebf75_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "ed307c26-a0cf-30b1-b1c8-5cef44587381",
           "kind": "fail",
           "level": "warning",
@@ -6075,6 +6044,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "d0d2a3375016c069a6f93245188cff83c9cd35359a1155c008f94175fbca18d14d27167643afab856a1adfeb5dd3deed181fee8d5531f2fbb6d1ad75f545655a_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "d90e1fa6-dcec-3011-9a62-3c0f65d51bde",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "`pass` is the body of function flush_queries. Consider removing this or raise NotImplementedError() if this is a TODO"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/rnnt/ootb/inference/loadgen/demos/py_demo_multi_stream.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 1,
+                  "endLine": 59,
+                  "endColumn": 9,
+                  "snippet": {
+                    "text": "def flush_queries():\n    pass"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "f3cf6cc5fdd40012aa7affff739849c982deba83afda6e1f5d1c5cdf6f2868e610505812188bca76445ef362ec17fcaa6ae27f142fada6bcf2bd72b7385ebf75_0"
           },
           "properties": {}
         },
@@ -6327,37 +6327,6 @@
           "properties": {}
         },
         {
-          "ruleId": "b2426f79-d616-3130-bfbe-dcb9d6f45cb8",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/rnnt/ootb/inference/loadgen/issue_query_controller.cc",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 419,
-                  "startColumn": 10,
-                  "endLine": 419,
-                  "endColumn": 37,
-                  "snippet": {
-                    "text": "  size_t queries_issued_per_iter = 0;"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "b372de73b5ebd1a51128c8cf80a8ebb138cdb296a535b566beee57986a7119540a0999bbbc18cfd35c341e1266afed1bd8ee112f71c732e891f614e4d88ef66d_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "5941efe1-33de-304f-8134-ac48b400a616",
           "kind": "fail",
           "level": "warning",
@@ -6385,6 +6354,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "2f617484d7702413b016def789be0f7c65b9c9891fd1e537f13c603b930979edf31fee839244fb6a9058f1f096fdf80fbe5364b3e87541667a4d891515eb9957_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "b2426f79-d616-3130-bfbe-dcb9d6f45cb8",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/rnnt/ootb/inference/loadgen/issue_query_controller.cc",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 419,
+                  "startColumn": 10,
+                  "endLine": 419,
+                  "endColumn": 37,
+                  "snippet": {
+                    "text": "  size_t queries_issued_per_iter = 0;"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "b372de73b5ebd1a51128c8cf80a8ebb138cdb296a535b566beee57986a7119540a0999bbbc18cfd35c341e1266afed1bd8ee112f71c732e891f614e4d88ef66d_0"
           },
           "properties": {}
         },
@@ -8125,37 +8125,6 @@
           "properties": {}
         },
         {
-          "ruleId": "4cd3e327-b1f5-3f1e-97b7-82f9da2025c5",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Functions reliant on pickle can result in arbitrary code execution.  Consider loading from `state_dict`, using fickling, or switching to a safer serialization method like ONNX"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/rnnt/ootb/inference/pytorch_SUT.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 36,
-                  "startColumn": 18,
-                  "endLine": 36,
-                  "endColumn": 59,
-                  "snippet": {
-                    "text": "    checkpoint = torch.load(ckpt_path, map_location=\"cpu\")"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "84afb0084db30eaee9f24d7ee657035370fd12d141d5359e08978a710fc9d07303cfeb789fc4df2ff9640d1c764b07456626b058ce443046e912b6eab880fcbf_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "cade9b73-d729-3c3c-b9b3-6b5d0573e065",
           "kind": "fail",
           "level": "warning",
@@ -8183,6 +8152,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "258066f774a25dbeb56494e4fbd9514ee989b178a36776c1c91e16985db4d05ca562b678c17232657d9186595461a8259ae7c5b67c6c1710933a49b34ce0be8c_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "4cd3e327-b1f5-3f1e-97b7-82f9da2025c5",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Functions reliant on pickle can result in arbitrary code execution.  Consider loading from `state_dict`, using fickling, or switching to a safer serialization method like ONNX"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/rnnt/ootb/inference/pytorch_SUT.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 18,
+                  "endLine": 36,
+                  "endColumn": 59,
+                  "snippet": {
+                    "text": "    checkpoint = torch.load(ckpt_path, map_location=\"cpu\")"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "84afb0084db30eaee9f24d7ee657035370fd12d141d5359e08978a710fc9d07303cfeb789fc4df2ff9640d1c764b07456626b058ce443046e912b6eab880fcbf_0"
           },
           "properties": {}
         },
@@ -8373,37 +8373,6 @@
           "properties": {}
         },
         {
-          "ruleId": "3bf7f541-b35a-3815-93c2-c07f51f5a326",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "The Python 'tarfile' extract|extractall functions are vulnerable to arbitrary file overwrites"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/rnnt/ootb/train/common/data/torchaudio/librispeech.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 88,
-                  "startColumn": 13,
-                  "endLine": 89,
-                  "endColumn": 38,
-                  "snippet": {
-                    "text": "            tar = tarfile.open(target_filename)\n            tar.extractall(split_dir)"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "b17a8a1043cc0475996c1d09aff437fad5e19eaac2876c81324e04b78b5bed2fde78cbea65408e7f62054708db552bb75a25948d4e8817a2c56e32502bd8ef81_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "c12a1b9b-1b7a-345e-9327-adcf5f86d968",
           "kind": "fail",
           "level": "warning",
@@ -8431,6 +8400,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "4ce4527e6e849daff175f56a3f76a5444197cbd8ebdba8f3156b733604c9dcaea00657e58dc0d439bb1188cf26dfe63a0e1cc9094e143f5c22f3ce1f052619f6_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "3bf7f541-b35a-3815-93c2-c07f51f5a326",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The Python 'tarfile' extract|extractall functions are vulnerable to arbitrary file overwrites"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/rnnt/ootb/train/common/data/torchaudio/librispeech.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 13,
+                  "endLine": 89,
+                  "endColumn": 38,
+                  "snippet": {
+                    "text": "            tar = tarfile.open(target_filename)\n            tar.extractall(split_dir)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "b17a8a1043cc0475996c1d09aff437fad5e19eaac2876c81324e04b78b5bed2fde78cbea65408e7f62054708db552bb75a25948d4e8817a2c56e32502bd8ef81_0"
           },
           "properties": {}
         },

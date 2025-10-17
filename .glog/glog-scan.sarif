@@ -36,30 +36,6 @@
               }
             },
             {
-              "id": "d22a4965-52f7-3d4e-b176-5e6fab40bcf3",
-              "name": "resources.rules.prefer-apt-get",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.prefer-apt-get"
-              },
-              "fullDescription": {
-                "text": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "help": {
-                "text": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3027](https://github.com/hadolint/hadolint/wiki/DL3027)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.prefer-apt-get"
-                ]
-              }
-            },
-            {
               "id": "4635ff3b-135e-3d7f-a545-8d01d9ae3793",
               "name": "resources.rules.prefer-apt-get",
               "shortDescription": {
@@ -108,7 +84,31 @@
               }
             },
             {
-              "id": "837123c0-3e1a-30ba-9a1d-675a3ad7ca24",
+              "id": "d22a4965-52f7-3d4e-b176-5e6fab40bcf3",
+              "name": "resources.rules.prefer-apt-get",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.prefer-apt-get"
+              },
+              "fullDescription": {
+                "text": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "help": {
+                "text": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3027](https://github.com/hadolint/hadolint/wiki/DL3027)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.prefer-apt-get"
+                ]
+              }
+            },
+            {
+              "id": "35b3f628-9b1d-3482-8fa1-786bbe5ea7f5",
               "name": "resources.rules.missing-pip-no-cache-dir",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-pip-no-cache-dir"
@@ -156,7 +156,7 @@
               }
             },
             {
-              "id": "35b3f628-9b1d-3482-8fa1-786bbe5ea7f5",
+              "id": "837123c0-3e1a-30ba-9a1d-675a3ad7ca24",
               "name": "resources.rules.missing-pip-no-cache-dir",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-pip-no-cache-dir"
@@ -300,6 +300,30 @@
               }
             },
             {
+              "id": "2bed2b48-c43d-3cf0-b89d-9a3ac5dc3c6d",
+              "name": "resources.rules.use-sys-exit",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.use-sys-exit"
+              },
+              "fullDescription": {
+                "text": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.use-sys-exit"
+                ]
+              }
+            },
+            {
               "id": "de814b3b-306c-3227-b7d7-30707bbbee8e",
               "name": "resources.rules.missing-pip-no-cache-dir",
               "shortDescription": {
@@ -320,30 +344,6 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.missing-pip-no-cache-dir"
-                ]
-              }
-            },
-            {
-              "id": "53fb6548-17cc-39b3-a747-d88f18a00014",
-              "name": "resources.rules.use-sys-exit",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.use-sys-exit"
-              },
-              "fullDescription": {
-                "text": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.use-sys-exit"
                 ]
               }
             },
@@ -372,7 +372,7 @@
               }
             },
             {
-              "id": "2bed2b48-c43d-3cf0-b89d-9a3ac5dc3c6d",
+              "id": "53fb6548-17cc-39b3-a747-d88f18a00014",
               "name": "resources.rules.use-sys-exit",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.use-sys-exit"
@@ -397,30 +397,6 @@
             },
             {
               "id": "34122146-afbe-327f-b185-6bc35e7d4662",
-              "name": "resources.rules.dangerous-system-call",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.dangerous-system-call"
-              },
-              "fullDescription": {
-                "text": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.dangerous-system-call"
-                ]
-              }
-            },
-            {
-              "id": "2c7c6e49-3116-35c6-9a2e-dd87c12a7b08",
               "name": "resources.rules.dangerous-system-call",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.dangerous-system-call"
@@ -492,6 +468,30 @@
               }
             },
             {
+              "id": "2c7c6e49-3116-35c6-9a2e-dd87c12a7b08",
+              "name": "resources.rules.dangerous-system-call",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.dangerous-system-call"
+              },
+              "fullDescription": {
+                "text": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.dangerous-system-call"
+                ]
+              }
+            },
+            {
               "id": "c3e578c9-3d7c-3e35-a3b1-9802176af9f3",
               "name": "resources.rules.missing-pip-no-cache-dir",
               "shortDescription": {
@@ -512,6 +512,30 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.missing-pip-no-cache-dir"
+                ]
+              }
+            },
+            {
+              "id": "d9699616-9b32-34c2-b613-f45523196b47",
+              "name": "resources.rules.open-never-closed",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.open-never-closed"
+              },
+              "fullDescription": {
+                "text": "file object opened without corresponding close"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "help": {
+                "text": "file object opened without corresponding close\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "file object opened without corresponding close\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.open-never-closed"
                 ]
               }
             },
@@ -565,26 +589,27 @@
               }
             },
             {
-              "id": "d9699616-9b32-34c2-b613-f45523196b47",
-              "name": "resources.rules.open-never-closed",
+              "id": "e0c23c9a-3b21-39ae-86ad-9d9249c5eae2",
+              "name": "trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
               "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.open-never-closed"
+                "text": "Opengrep Finding: trailofbits.python.automatic-memory-pinning.automatic-memory-pinning"
               },
               "fullDescription": {
-                "text": "file object opened without corresponding close"
+                "text": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency"
               },
               "defaultConfiguration": {
                 "enabled": true,
-                "level": "error"
+                "level": "warning"
               },
+              "helpUri": "https://semgrep.dev/r/trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
               "help": {
-                "text": "file object opened without corresponding close\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "file object opened without corresponding close\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+                "text": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/trailofbits.python.automatic-memory-pinning.automatic-memory-pinning)\n - [https://pytorch.org/docs/stable/data.html#memory-pinning](https://pytorch.org/docs/stable/data.html#memory-pinning)\n"
               },
               "properties": {
                 "precision": "very-high",
                 "tags": [
-                  "resources.rules.open-never-closed"
+                  "trailofbits.python.automatic-memory-pinning.automatic-memory-pinning"
                 ]
               }
             },
@@ -663,32 +688,31 @@
               }
             },
             {
-              "id": "e0c23c9a-3b21-39ae-86ad-9d9249c5eae2",
-              "name": "trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
+              "id": "2cfbc209-d820-3a77-ae0e-ad355362a7f9",
+              "name": "resources.rules.return-not-in-function",
               "shortDescription": {
-                "text": "Opengrep Finding: trailofbits.python.automatic-memory-pinning.automatic-memory-pinning"
+                "text": "Opengrep Finding: resources.rules.return-not-in-function"
               },
               "fullDescription": {
-                "text": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency"
+                "text": "`return` only makes sense inside a function"
               },
               "defaultConfiguration": {
                 "enabled": true,
                 "level": "warning"
               },
-              "helpUri": "https://semgrep.dev/r/trailofbits.python.automatic-memory-pinning.automatic-memory-pinning",
               "help": {
-                "text": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/trailofbits.python.automatic-memory-pinning.automatic-memory-pinning)\n - [https://pytorch.org/docs/stable/data.html#memory-pinning](https://pytorch.org/docs/stable/data.html#memory-pinning)\n"
+                "text": "`return` only makes sense inside a function\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "`return` only makes sense inside a function\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
               },
               "properties": {
                 "precision": "very-high",
                 "tags": [
-                  "trailofbits.python.automatic-memory-pinning.automatic-memory-pinning"
+                  "resources.rules.return-not-in-function"
                 ]
               }
             },
             {
-              "id": "2cfbc209-d820-3a77-ae0e-ad355362a7f9",
+              "id": "a50942c5-190c-34b4-8db0-ba31642d8efb",
               "name": "resources.rules.return-not-in-function",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.return-not-in-function"
@@ -756,30 +780,6 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.return-in-init"
-                ]
-              }
-            },
-            {
-              "id": "a50942c5-190c-34b4-8db0-ba31642d8efb",
-              "name": "resources.rules.return-not-in-function",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.return-not-in-function"
-              },
-              "fullDescription": {
-                "text": "`return` only makes sense inside a function"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "`return` only makes sense inside a function\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "`return` only makes sense inside a function\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.return-not-in-function"
                 ]
               }
             },
@@ -1131,7 +1131,7 @@
               }
             },
             {
-              "id": "c8eb6f69-109f-3b0c-b42b-6d2970292586",
+              "id": "af6d1d3f-1302-355d-b4a5-68d4da58f6ed",
               "name": "trailofbits.python.numpy-in-pytorch-modules.numpy-in-pytorch-modules",
               "shortDescription": {
                 "text": "Opengrep Finding: trailofbits.python.numpy-in-pytorch-modules.numpy-in-pytorch-modules"
@@ -1156,7 +1156,7 @@
               }
             },
             {
-              "id": "af6d1d3f-1302-355d-b4a5-68d4da58f6ed",
+              "id": "c8eb6f69-109f-3b0c-b42b-6d2970292586",
               "name": "trailofbits.python.numpy-in-pytorch-modules.numpy-in-pytorch-modules",
               "shortDescription": {
                 "text": "Opengrep Finding: trailofbits.python.numpy-in-pytorch-modules.numpy-in-pytorch-modules"
@@ -1325,30 +1325,6 @@
               }
             },
             {
-              "id": "37e4378f-817e-3465-958b-ee890bbc1e87",
-              "name": "resources.rules.raptor-suspicious-assert",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.raptor-suspicious-assert"
-              },
-              "fullDescription": {
-                "text": "Most codebases define assertion macros which compile to a no-op on non-debug builds. If assertions are the only line of defense against untrusted input, the software may be exposed to attacks that leverage the lack of proper input checks."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Most codebases define assertion macros which compile to a no-op on non-debug builds. If assertions are the only line of defense against untrusted input, the software may be exposed to attacks that leverage the lack of proper input checks.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Most codebases define assertion macros which compile to a no-op on non-debug builds. If assertions are the only line of defense against untrusted input, the software may be exposed to attacks that leverage the lack of proper input checks.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://legends2k.github.io/note/assert_vs_if/](https://legends2k.github.io/note/assert_vs_if/)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.raptor-suspicious-assert"
-                ]
-              }
-            },
-            {
               "id": "d14adb8f-062b-3fd3-95f6-e715fbd8d065",
               "name": "resources.rules.raptor-signed-unsigned-conversion",
               "shortDescription": {
@@ -1369,6 +1345,30 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.raptor-signed-unsigned-conversion"
+                ]
+              }
+            },
+            {
+              "id": "37e4378f-817e-3465-958b-ee890bbc1e87",
+              "name": "resources.rules.raptor-suspicious-assert",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.raptor-suspicious-assert"
+              },
+              "fullDescription": {
+                "text": "Most codebases define assertion macros which compile to a no-op on non-debug builds. If assertions are the only line of defense against untrusted input, the software may be exposed to attacks that leverage the lack of proper input checks."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Most codebases define assertion macros which compile to a no-op on non-debug builds. If assertions are the only line of defense against untrusted input, the software may be exposed to attacks that leverage the lack of proper input checks.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Most codebases define assertion macros which compile to a no-op on non-debug builds. If assertions are the only line of defense against untrusted input, the software may be exposed to attacks that leverage the lack of proper input checks.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://legends2k.github.io/note/assert_vs_if/](https://legends2k.github.io/note/assert_vs_if/)\n - [https://github.com/struct/mms](https://github.com/struct/mms)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.raptor-suspicious-assert"
                 ]
               }
             },
@@ -1493,7 +1493,7 @@
               }
             },
             {
-              "id": "ed307c26-a0cf-30b1-b1c8-5cef44587381",
+              "id": "d90e1fa6-dcec-3011-9a62-3c0f65d51bde",
               "name": "resources.rules.pass-body-fn",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.pass-body-fn"
@@ -1517,7 +1517,7 @@
               }
             },
             {
-              "id": "d90e1fa6-dcec-3011-9a62-3c0f65d51bde",
+              "id": "ed307c26-a0cf-30b1-b1c8-5cef44587381",
               "name": "resources.rules.pass-body-fn",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.pass-body-fn"
@@ -1733,7 +1733,7 @@
               }
             },
             {
-              "id": "5941efe1-33de-304f-8134-ac48b400a616",
+              "id": "b2426f79-d616-3130-bfbe-dcb9d6f45cb8",
               "name": "resources.rules.raptor-signed-unsigned-conversion",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
@@ -1757,7 +1757,7 @@
               }
             },
             {
-              "id": "b2426f79-d616-3130-bfbe-dcb9d6f45cb8",
+              "id": "5941efe1-33de-304f-8134-ac48b400a616",
               "name": "resources.rules.raptor-signed-unsigned-conversion",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.raptor-signed-unsigned-conversion"
@@ -2478,30 +2478,6 @@
               }
             },
             {
-              "id": "2a9940f4-f3d6-31eb-9fbb-743e51a2ae1b",
-              "name": "resources.rules.dangerous-system-call",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.dangerous-system-call"
-              },
-              "fullDescription": {
-                "text": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.dangerous-system-call"
-                ]
-              }
-            },
-            {
               "id": "39a64bab-be74-3b35-8692-f0f851ecdb7e",
               "name": "resources.rules.use-workdir",
               "shortDescription": {
@@ -2522,6 +2498,30 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.use-workdir"
+                ]
+              }
+            },
+            {
+              "id": "2a9940f4-f3d6-31eb-9fbb-743e51a2ae1b",
+              "name": "resources.rules.dangerous-system-call",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.dangerous-system-call"
+              },
+              "fullDescription": {
+                "text": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.dangerous-system-call"
                 ]
               }
             },
@@ -2594,30 +2594,6 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.return-in-init"
-                ]
-              }
-            },
-            {
-              "id": "62bcd739-2363-3312-a742-fbf16329d994",
-              "name": "resources.rules.dlint-catastrophic-redos",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
-              },
-              "fullDescription": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "help": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.dlint-catastrophic-redos"
                 ]
               }
             },
@@ -2862,7 +2838,7 @@
               }
             },
             {
-              "id": "8aa4387b-015e-33ea-bb99-1f7f1c9a3828",
+              "id": "19b0a48a-0960-3d79-89d1-9046831c919b",
               "name": "resources.rules.dlint-catastrophic-redos",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
@@ -2886,7 +2862,7 @@
               }
             },
             {
-              "id": "19b0a48a-0960-3d79-89d1-9046831c919b",
+              "id": "8aa4387b-015e-33ea-bb99-1f7f1c9a3828",
               "name": "resources.rules.dlint-catastrophic-redos",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
@@ -3319,30 +3295,6 @@
               }
             },
             {
-              "id": "c12a1b9b-1b7a-345e-9327-adcf5f86d968",
-              "name": "resources.rules.dlint-catastrophic-redos",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
-              },
-              "fullDescription": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "help": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.dlint-catastrophic-redos"
-                ]
-              }
-            },
-            {
               "id": "3bf7f541-b35a-3815-93c2-c07f51f5a326",
               "name": "resources.rules.insecure-tarfile-use",
               "shortDescription": {
@@ -3363,6 +3315,30 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.insecure-tarfile-use"
+                ]
+              }
+            },
+            {
+              "id": "c12a1b9b-1b7a-345e-9327-adcf5f86d968",
+              "name": "resources.rules.dlint-catastrophic-redos",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
+              },
+              "fullDescription": {
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "help": {
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.dlint-catastrophic-redos"
                 ]
               }
             },
@@ -3417,31 +3393,6 @@
             },
             {
               "id": "35fbb675-1944-3502-a7de-5603340ddc84",
-              "name": "trailofbits.python.pickles-in-pytorch.pickles-in-pytorch",
-              "shortDescription": {
-                "text": "Opengrep Finding: trailofbits.python.pickles-in-pytorch.pickles-in-pytorch"
-              },
-              "fullDescription": {
-                "text": "Functions reliant on pickle can result in arbitrary code execution.  Consider loading from `state_dict`, using fickling, or switching to a safer serialization method like ONNX"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "helpUri": "https://semgrep.dev/r/trailofbits.python.pickles-in-pytorch.pickles-in-pytorch",
-              "help": {
-                "text": "Functions reliant on pickle can result in arbitrary code execution.  Consider loading from `state_dict`, using fickling, or switching to a safer serialization method like ONNX\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Functions reliant on pickle can result in arbitrary code execution.  Consider loading from `state_dict`, using fickling, or switching to a safer serialization method like ONNX\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/trailofbits.python.pickles-in-pytorch.pickles-in-pytorch)\n - [https://blog.trailofbits.com/2021/03/15/never-a-dill-moment-exploiting-machine-learning-pickle-files/](https://blog.trailofbits.com/2021/03/15/never-a-dill-moment-exploiting-machine-learning-pickle-files/)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "trailofbits.python.pickles-in-pytorch.pickles-in-pytorch"
-                ]
-              }
-            },
-            {
-              "id": "6e9225fe-d3a2-3c1c-b2eb-4e0fa84a0ec1",
               "name": "trailofbits.python.pickles-in-pytorch.pickles-in-pytorch",
               "shortDescription": {
                 "text": "Opengrep Finding: trailofbits.python.pickles-in-pytorch.pickles-in-pytorch"
@@ -3538,7 +3489,7 @@
               }
             },
             {
-              "id": "681b57f6-2d34-3c7d-8b6c-8077858cfbb1",
+              "id": "8a63af58-973a-3959-af14-93a4a5174aac",
               "name": "resources.rules.dlint-catastrophic-redos",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
@@ -3562,7 +3513,7 @@
               }
             },
             {
-              "id": "8a63af58-973a-3959-af14-93a4a5174aac",
+              "id": "681b57f6-2d34-3c7d-8b6c-8077858cfbb1",
               "name": "resources.rules.dlint-catastrophic-redos",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
@@ -3730,7 +3681,7 @@
               }
             },
             {
-              "id": "148917ae-fccd-3530-bf3d-f10ba0a3570a",
+              "id": "51958fbd-fae0-39e4-9f5d-f2514e395772",
               "name": "resources.rules.dlint-catastrophic-redos",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
@@ -3754,7 +3705,7 @@
               }
             },
             {
-              "id": "51958fbd-fae0-39e4-9f5d-f2514e395772",
+              "id": "148917ae-fccd-3530-bf3d-f10ba0a3570a",
               "name": "resources.rules.dlint-catastrophic-redos",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
@@ -3826,7 +3777,7 @@
               }
             },
             {
-              "id": "bcd05f45-d254-3161-aab2-ad946950ce30",
+              "id": "fede1c29-e417-3aa8-aa50-8a569a96bb2f",
               "name": "resources.rules.dlint-catastrophic-redos",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
@@ -3850,7 +3801,7 @@
               }
             },
             {
-              "id": "fede1c29-e417-3aa8-aa50-8a569a96bb2f",
+              "id": "bcd05f45-d254-3161-aab2-ad946950ce30",
               "name": "resources.rules.dlint-catastrophic-redos",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
@@ -4157,37 +4108,6 @@
           "properties": {}
         },
         {
-          "ruleId": "d22a4965-52f7-3d4e-b176-5e6fab40bcf3",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/bevt/ootb/Dockerfile.cuda",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 1,
-                  "endLine": 7,
-                  "endColumn": 8,
-                  "snippet": {
-                    "text": "RUN apt update && apt install -y vim git"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "20035bb0d6bac16c351e54f0ce5b2b52b3bda3fb26eaeb112b282d850904ae424fc65b5f16bf1be76731d7080460664129388a703cd37122f9ab841c73862f93_1"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "4635ff3b-135e-3d7f-a545-8d01d9ae3793",
           "kind": "fail",
           "level": "warning",
@@ -4250,7 +4170,38 @@
           "properties": {}
         },
         {
-          "ruleId": "837123c0-3e1a-30ba-9a1d-675a3ad7ca24",
+          "ruleId": "d22a4965-52f7-3d4e-b176-5e6fab40bcf3",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "'apt-get' is preferred as an unattended tool for stability. 'apt' is discouraged."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/bevt/ootb/Dockerfile.cuda",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 1,
+                  "endLine": 7,
+                  "endColumn": 8,
+                  "snippet": {
+                    "text": "RUN apt update && apt install -y vim git"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "20035bb0d6bac16c351e54f0ce5b2b52b3bda3fb26eaeb112b282d850904ae424fc65b5f16bf1be76731d7080460664129388a703cd37122f9ab841c73862f93_1"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "35b3f628-9b1d-3482-8fa1-786bbe5ea7f5",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -4264,19 +4215,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 18,
+                  "startLine": 20,
                   "startColumn": 1,
-                  "endLine": 18,
+                  "endLine": 20,
                   "endColumn": 21,
                   "snippet": {
-                    "text": "RUN pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.11.0/index.html"
+                    "text": "RUN pip install DALL-E timm einops decord nvtx scipy"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "9f38d60c06100a7b224adabc57e7d39c65913f53e29779d4e5db19c917acc9cf300247d84291da061381c914c960bef9a29555043c7a141d7e79fddcc1d49fb3_0"
+            "matchBasedId/v1": "a8ef6c14e813efabd2a2e5519c81c5ecbfe272b18ef884a299802539592d31705f0a4ddeeb1ab53c8c5dd0fe005bb2192daee7df6026e8b39137176c95f8e199_0"
           },
           "properties": {}
         },
@@ -4312,7 +4263,7 @@
           "properties": {}
         },
         {
-          "ruleId": "35b3f628-9b1d-3482-8fa1-786bbe5ea7f5",
+          "ruleId": "837123c0-3e1a-30ba-9a1d-675a3ad7ca24",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -4326,19 +4277,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 20,
+                  "startLine": 18,
                   "startColumn": 1,
-                  "endLine": 20,
+                  "endLine": 18,
                   "endColumn": 21,
                   "snippet": {
-                    "text": "RUN pip install DALL-E timm einops decord nvtx scipy"
+                    "text": "RUN pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.11.0/index.html"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "a8ef6c14e813efabd2a2e5519c81c5ecbfe272b18ef884a299802539592d31705f0a4ddeeb1ab53c8c5dd0fe005bb2192daee7df6026e8b39137176c95f8e199_0"
+            "matchBasedId/v1": "9f38d60c06100a7b224adabc57e7d39c65913f53e29779d4e5db19c917acc9cf300247d84291da061381c914c960bef9a29555043c7a141d7e79fddcc1d49fb3_0"
           },
           "properties": {}
         },
@@ -4498,6 +4449,37 @@
           "properties": {}
         },
         {
+          "ruleId": "2bed2b48-c43d-3cf0-b89d-9a3ac5dc3c6d",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/cudnn_multihead_attn/multihead_attn_make_ref.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 239,
+                  "startColumn": 9,
+                  "endLine": 239,
+                  "endColumn": 15,
+                  "snippet": {
+                    "text": "        exit()"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "ca744cdf3162cf1abdd900b01137753fde52e052d77fb95b1cbd2ad084bef1f4a3020d002d0db581c6fac8ec49479692b5d8de836246aeefd1520845ece7e345_1"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "de814b3b-306c-3227-b7d7-30707bbbee8e",
           "kind": "fail",
           "level": "warning",
@@ -4525,37 +4507,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "5a3bb7e41babfeaf57daa876febff251c230aed37be8479eec820bcf83792d86944bd3c3fad2cd89ff2d61753febe032eb817e25b79e5542208d4b95374da307_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "53fb6548-17cc-39b3-a747-d88f18a00014",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Use `sys.exit` over the python shell `exit` built-in. `exit` is a helper for the interactive shell and may not be available on all Python implementations. https://stackoverflow.com/questions/6501121/difference-between-exit-and-sys-exit-in-python"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/cudnn_multihead_attn/multihead_attn_make_ref.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 192,
-                  "startColumn": 9,
-                  "endLine": 192,
-                  "endColumn": 15,
-                  "snippet": {
-                    "text": "        exit()"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "ca744cdf3162cf1abdd900b01137753fde52e052d77fb95b1cbd2ad084bef1f4a3020d002d0db581c6fac8ec49479692b5d8de836246aeefd1520845ece7e345_0"
           },
           "properties": {}
         },
@@ -4591,7 +4542,7 @@
           "properties": {}
         },
         {
-          "ruleId": "2bed2b48-c43d-3cf0-b89d-9a3ac5dc3c6d",
+          "ruleId": "53fb6548-17cc-39b3-a747-d88f18a00014",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -4605,9 +4556,9 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 239,
+                  "startLine": 192,
                   "startColumn": 9,
-                  "endLine": 239,
+                  "endLine": 192,
                   "endColumn": 15,
                   "snippet": {
                     "text": "        exit()"
@@ -4617,7 +4568,7 @@
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "ca744cdf3162cf1abdd900b01137753fde52e052d77fb95b1cbd2ad084bef1f4a3020d002d0db581c6fac8ec49479692b5d8de836246aeefd1520845ece7e345_1"
+            "matchBasedId/v1": "ca744cdf3162cf1abdd900b01137753fde52e052d77fb95b1cbd2ad084bef1f4a3020d002d0db581c6fac8ec49479692b5d8de836246aeefd1520845ece7e345_0"
           },
           "properties": {}
         },
@@ -4649,37 +4600,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "c74d36af0a0feda0020d1562f49f64f0a416482e02bc1b8afe139faff7bb264303a4a6395e2d6547b045cd6c808bb41b4562d5daf9826e408076e2edaad152aa_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "2c7c6e49-3116-35c6-9a2e-dd87c12a7b08",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/cvt/ootb/repeat_fake_data.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 22,
-                  "startColumn": 13,
-                  "endLine": 22,
-                  "endColumn": 56,
-                  "snippet": {
-                    "text": "            os.system(f\"rm {folder}/{class_to_del} -r\")"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "c74d36af0a0feda0020d1562f49f64f0a416482e02bc1b8afe139faff7bb264303a4a6395e2d6547b045cd6c808bb41b4562d5daf9826e408076e2edaad152aa_1"
           },
           "properties": {}
         },
@@ -4746,6 +4666,37 @@
           "properties": {}
         },
         {
+          "ruleId": "2c7c6e49-3116-35c6-9a2e-dd87c12a7b08",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/cvt/ootb/repeat_fake_data.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 13,
+                  "endLine": 22,
+                  "endColumn": 56,
+                  "snippet": {
+                    "text": "            os.system(f\"rm {folder}/{class_to_del} -r\")"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "c74d36af0a0feda0020d1562f49f64f0a416482e02bc1b8afe139faff7bb264303a4a6395e2d6547b045cd6c808bb41b4562d5daf9826e408076e2edaad152aa_1"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "c3e578c9-3d7c-3e35-a3b1-9802176af9f3",
           "kind": "fail",
           "level": "warning",
@@ -4773,6 +4724,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "4eeaffd389e21c3182deb5f082cc6f02a8d244bee136b0123b6732ac46951b560f09dda3b15214f385f112c1a95761a5a8520c70975e8810b9f8cab8c289728a_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "d9699616-9b32-34c2-b613-f45523196b47",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "file object opened without corresponding close"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/dlrm/ootb/data_loader_terabyte.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 216,
+                  "startColumn": 9,
+                  "endLine": 216,
+                  "endColumn": 42,
+                  "snippet": {
+                    "text": "        self.file = open(data_file, 'rb')"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "82d8b8d7045f347a3a3cf8b52c0a8dba635029c64693475463e0d728b605918fd136d748c4a76034412a4d4323c4a79f64638b8b8f746def0e3af3cf468b5c60_0"
           },
           "properties": {}
         },
@@ -4839,33 +4821,33 @@
           "properties": {}
         },
         {
-          "ruleId": "d9699616-9b32-34c2-b613-f45523196b47",
+          "ruleId": "e0c23c9a-3b21-39ae-86ad-9d9249c5eae2",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "file object opened without corresponding close"
+            "text": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "benchmarks/dlrm/ootb/data_loader_terabyte.py",
+                  "uri": "benchmarks/dlrm/ootb/dlrm_data_caffe2.py",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 216,
-                  "startColumn": 9,
-                  "endLine": 216,
-                  "endColumn": 42,
+                  "startLine": 284,
+                  "startColumn": 23,
+                  "endLine": 292,
+                  "endColumn": 10,
                   "snippet": {
-                    "text": "        self.file = open(data_file, 'rb')"
+                    "text": "        test_loader = torch.utils.data.DataLoader(\n            test_data,\n            batch_size=test_mini_batch_size,\n            shuffle=False,\n            num_workers=0,\n            collate_fn=collate_wrapper_criteo,\n            pin_memory=False,\n            drop_last=False,  # True\n        )"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "82d8b8d7045f347a3a3cf8b52c0a8dba635029c64693475463e0d728b605918fd136d748c4a76034412a4d4323c4a79f64638b8b8f746def0e3af3cf468b5c60_0"
+            "matchBasedId/v1": "e14c2edac26a53d47744e608ddc50b99e805f05860aa0784e3a80cf5471b148dab15461703fb4453a04da415db83d105a12cea02ea840f3888dbdb4ce9db213f_1"
           },
           "properties": {}
         },
@@ -4963,37 +4945,6 @@
           "properties": {}
         },
         {
-          "ruleId": "e0c23c9a-3b21-39ae-86ad-9d9249c5eae2",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "If possible, it is better to rely on automatic pinning in PyTorch to avoid undefined behavior and for efficiency"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/dlrm/ootb/dlrm_data_caffe2.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 284,
-                  "startColumn": 23,
-                  "endLine": 292,
-                  "endColumn": 10,
-                  "snippet": {
-                    "text": "        test_loader = torch.utils.data.DataLoader(\n            test_data,\n            batch_size=test_mini_batch_size,\n            shuffle=False,\n            num_workers=0,\n            collate_fn=collate_wrapper_criteo,\n            pin_memory=False,\n            drop_last=False,  # True\n        )"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "e14c2edac26a53d47744e608ddc50b99e805f05860aa0784e3a80cf5471b148dab15461703fb4453a04da415db83d105a12cea02ea840f3888dbdb4ce9db213f_1"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "2cfbc209-d820-3a77-ae0e-ad355362a7f9",
           "kind": "fail",
           "level": "warning",
@@ -5021,6 +4972,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "a9b1de2c86183e01fe2c950b4fa9af0654fde1c0e22c6a7aef44b9cb2004166e2038e27302149625b3db794f11b3d9931532d74bd0cecee4d7068bf865c38131_1"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "a50942c5-190c-34b4-8db0-ba31642d8efb",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "`return` only makes sense inside a function"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/dlrm/ootb/dlrm_data_pytorch.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1288,
+                  "startColumn": 31,
+                  "endLine": 1288,
+                  "endColumn": 54,
+                  "snippet": {
+                    "text": "        map(lambda tuple_x_k: tuple_x_k[1] / float(l), dc)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "2c8e1fdd99166d5717b8b7827a0da10318684c286e40accf1788d59cd4942b04ba09729733cd1b6e7fafe8c0be9cc538a7ff3fdb392dfab7923da1814c57033d_1"
           },
           "properties": {}
         },
@@ -5083,37 +5065,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "56f76ed41245b12bc1ce7b5f9b3a6586ef64a31a602502e62cecdab4bebbd8573b35692a618a385f573911db2fb2ab74762b57cdac212c43409ddfbf19c51619_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "a50942c5-190c-34b4-8db0-ba31642d8efb",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "`return` only makes sense inside a function"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/dlrm/ootb/dlrm_data_pytorch.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1288,
-                  "startColumn": 31,
-                  "endLine": 1288,
-                  "endColumn": 54,
-                  "snippet": {
-                    "text": "        map(lambda tuple_x_k: tuple_x_k[1] / float(l), dc)"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "2c8e1fdd99166d5717b8b7827a0da10318684c286e40accf1788d59cd4942b04ba09729733cd1b6e7fafe8c0be9cc538a7ff3fdb392dfab7923da1814c57033d_1"
           },
           "properties": {}
         },
@@ -5552,37 +5503,6 @@
           "properties": {}
         },
         {
-          "ruleId": "c8eb6f69-109f-3b0c-b42b-6d2970292586",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Usage of NumPy library inside PyTorch `QREmbeddingBag` module was found. Avoid mixing these libraries for efficiency and proper ONNX loading"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/dlrm/ootb/tricks/qr_embedding_bag.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 154,
-                  "startColumn": 41,
-                  "endLine": 154,
-                  "endColumn": 73,
-                  "snippet": {
-                    "text": "        nn.init.uniform_(self.weight_r, np.sqrt(1 / self.num_categories))"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "3cccc6174746288578ef6e2d64a14143119280a5ae077234012166db1f4cc548120622842b5900f5ad7115cdffca4a33a29687531433421be13d2496aef77136_1"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "af6d1d3f-1302-355d-b4a5-68d4da58f6ed",
           "kind": "fail",
           "level": "warning",
@@ -5610,6 +5530,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "3cccc6174746288578ef6e2d64a14143119280a5ae077234012166db1f4cc548120622842b5900f5ad7115cdffca4a33a29687531433421be13d2496aef77136_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "c8eb6f69-109f-3b0c-b42b-6d2970292586",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Usage of NumPy library inside PyTorch `QREmbeddingBag` module was found. Avoid mixing these libraries for efficiency and proper ONNX loading"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/dlrm/ootb/tricks/qr_embedding_bag.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 154,
+                  "startColumn": 41,
+                  "endLine": 154,
+                  "endColumn": 73,
+                  "snippet": {
+                    "text": "        nn.init.uniform_(self.weight_r, np.sqrt(1 / self.num_categories))"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "3cccc6174746288578ef6e2d64a14143119280a5ae077234012166db1f4cc548120622842b5900f5ad7115cdffca4a33a29687531433421be13d2496aef77136_1"
           },
           "properties": {}
         },
@@ -5800,37 +5751,6 @@
           "properties": {}
         },
         {
-          "ruleId": "37e4378f-817e-3465-958b-ee890bbc1e87",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Most codebases define assertion macros which compile to a no-op on non-debug builds. If assertions are the only line of defense against untrusted input, the software may be exposed to attacks that leverage the lack of proper input checks."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/rnnt/ootb/inference/loadgen/benchmark/repro.cpp",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 215,
-                  "startColumn": 3,
-                  "endLine": 215,
-                  "endColumn": 75,
-                  "snippet": {
-                    "text": "  assert(argc >= 2 && \"Need to pass in at least one argument: target_qps\");"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "e24cef7a736824c99f27d9b6dea6a1d399f2400285b0626ec04f8b9a57a6a9efc1d45f1cb79ad9281f720f60320915887c235c133c3e46a3b1039c2357ce9347_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "d14adb8f-062b-3fd3-95f6-e715fbd8d065",
           "kind": "fail",
           "level": "warning",
@@ -5858,6 +5778,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "f261da0fdbc2caef70094e307834b5f91c0a4a15b042e82c0126143f123f42107d0ec292fab60e72427148443e22ca498d3776e253ec19905842a7d257c15a9b_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "37e4378f-817e-3465-958b-ee890bbc1e87",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Most codebases define assertion macros which compile to a no-op on non-debug builds. If assertions are the only line of defense against untrusted input, the software may be exposed to attacks that leverage the lack of proper input checks."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/rnnt/ootb/inference/loadgen/benchmark/repro.cpp",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 215,
+                  "startColumn": 3,
+                  "endLine": 215,
+                  "endColumn": 75,
+                  "snippet": {
+                    "text": "  assert(argc >= 2 && \"Need to pass in at least one argument: target_qps\");"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "e24cef7a736824c99f27d9b6dea6a1d399f2400285b0626ec04f8b9a57a6a9efc1d45f1cb79ad9281f720f60320915887c235c133c3e46a3b1039c2357ce9347_0"
           },
           "properties": {}
         },
@@ -6017,37 +5968,6 @@
           "properties": {}
         },
         {
-          "ruleId": "ed307c26-a0cf-30b1-b1c8-5cef44587381",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "`pass` is the body of function flush_queries. Consider removing this or raise NotImplementedError() if this is a TODO"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/rnnt/ootb/inference/loadgen/demos/py_demo_multi_stream_free.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 58,
-                  "startColumn": 1,
-                  "endLine": 59,
-                  "endColumn": 9,
-                  "snippet": {
-                    "text": "def flush_queries():\n    pass"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "d0d2a3375016c069a6f93245188cff83c9cd35359a1155c008f94175fbca18d14d27167643afab856a1adfeb5dd3deed181fee8d5531f2fbb6d1ad75f545655a_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "d90e1fa6-dcec-3011-9a62-3c0f65d51bde",
           "kind": "fail",
           "level": "warning",
@@ -6075,6 +5995,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "f3cf6cc5fdd40012aa7affff739849c982deba83afda6e1f5d1c5cdf6f2868e610505812188bca76445ef362ec17fcaa6ae27f142fada6bcf2bd72b7385ebf75_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "ed307c26-a0cf-30b1-b1c8-5cef44587381",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "`pass` is the body of function flush_queries. Consider removing this or raise NotImplementedError() if this is a TODO"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/rnnt/ootb/inference/loadgen/demos/py_demo_multi_stream_free.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 1,
+                  "endLine": 59,
+                  "endColumn": 9,
+                  "snippet": {
+                    "text": "def flush_queries():\n    pass"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "d0d2a3375016c069a6f93245188cff83c9cd35359a1155c008f94175fbca18d14d27167643afab856a1adfeb5dd3deed181fee8d5531f2fbb6d1ad75f545655a_0"
           },
           "properties": {}
         },
@@ -6327,37 +6278,6 @@
           "properties": {}
         },
         {
-          "ruleId": "5941efe1-33de-304f-8134-ac48b400a616",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/rnnt/ootb/inference/loadgen/issue_query_controller.cc",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 425,
-                  "startColumn": 16,
-                  "endLine": 428,
-                  "endColumn": 44,
-                  "snippet": {
-                    "text": "  const size_t min_query_count_for_thread =\n      (thread_idx < (min_query_count % query_stride))\n          ? (min_query_count / query_stride + 1)\n          : (min_query_count / query_stride);"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "2f617484d7702413b016def789be0f7c65b9c9891fd1e537f13c603b930979edf31fee839244fb6a9058f1f096fdf80fbe5364b3e87541667a4d891515eb9957_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "b2426f79-d616-3130-bfbe-dcb9d6f45cb8",
           "kind": "fail",
           "level": "warning",
@@ -6385,6 +6305,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "b372de73b5ebd1a51128c8cf80a8ebb138cdb296a535b566beee57986a7119540a0999bbbc18cfd35c341e1266afed1bd8ee112f71c732e891f614e4d88ef66d_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "5941efe1-33de-304f-8134-ac48b400a616",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "The software uses a signed primitive and performs a cast to an unsigned primitive, or uses an unsigned primitive and performs a cast to a signed primitive, which can produce an unexpected value. When the result of a function is to be used as a size parameter, using negative return values can have unexpected results. Although less frequent an issue, unsigned-to-signed conversion can be  the precursor to buffer underwrite conditions. Buffer underwrites  occur frequently when large unsigned values are cast to signed values,  and then used as indexes into a buffer or for pointer arithmetic."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/rnnt/ootb/inference/loadgen/issue_query_controller.cc",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 425,
+                  "startColumn": 16,
+                  "endLine": 428,
+                  "endColumn": 44,
+                  "snippet": {
+                    "text": "  const size_t min_query_count_for_thread =\n      (thread_idx < (min_query_count % query_stride))\n          ? (min_query_count / query_stride + 1)\n          : (min_query_count / query_stride);"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "2f617484d7702413b016def789be0f7c65b9c9891fd1e537f13c603b930979edf31fee839244fb6a9058f1f096fdf80fbe5364b3e87541667a4d891515eb9957_0"
           },
           "properties": {}
         },
@@ -7288,37 +7239,6 @@
           "properties": {}
         },
         {
-          "ruleId": "2a9940f4-f3d6-31eb-9fbb-743e51a2ae1b",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/rnnt/ootb/inference/loadgen/version_generator.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 106,
-                  "startColumn": 18,
-                  "endLine": 106,
-                  "endColumn": 50,
-                  "snippet": {
-                    "text": "    git_status = os.popen(git_command + \"status\")"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "b343109843ee0ba982dcd1b1831e6a3439a49d50de004d4374e9eb71ec39ff179bedb365f4a97599a6a0076cf64614d597eb12fb36209a852a2ea8a7362f7fd0_4"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "39a64bab-be74-3b35-8692-f0f851ecdb7e",
           "kind": "fail",
           "level": "warning",
@@ -7346,6 +7266,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "f913ded585354137cbd7d06918dcbbf8100cb12a2bb2d6221817a2efff3ee9a7c8d9c5eb39f77c7ffc365686ca4f5fcd94171d8707b1439f7efdde59c869b337_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "2a9940f4-f3d6-31eb-9fbb-743e51a2ae1b",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Found dynamic content used in a system call. This is dangerous if external data can reach this function call because it allows a malicious actor to execute commands. Use the 'subprocess' module instead, which is easier to use without accidentally exposing a command injection vulnerability."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/rnnt/ootb/inference/loadgen/version_generator.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 18,
+                  "endLine": 106,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "    git_status = os.popen(git_command + \"status\")"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "b343109843ee0ba982dcd1b1831e6a3439a49d50de004d4374e9eb71ec39ff179bedb365f4a97599a6a0076cf64614d597eb12fb36209a852a2ea8a7362f7fd0_4"
           },
           "properties": {}
         },
@@ -7408,37 +7359,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "5f818e3be86cb5a1196394d771dc16e759c4a97c1e1c97e74139b3b45f239070c2878618d6bbda14f19d7a63a70c948666b4aa6295ee763a5678b79f81554bc7_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "59813790-a0a6-3042-a796-cab236af8a0a",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "`return` should never appear inside a class __init__ function. This will cause a runtime error."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/rnnt/ootb/inference/pytorch/parts/manifest.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 140,
-                  "startColumn": 45,
-                  "endLine": 140,
-                  "endColumn": 58,
-                  "snippet": {
-                    "text": "            ids = sorted(ids, key=lambda x: x['duration'])"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "c4bbcabd3b70d74c9ea528b6ad7f6bce7f8449a3f6fec4df55ed19953e40748431997be55734687723fdab951a2731244a76ef7ce8a2b1d907d0e6d837f0a736_0"
           },
           "properties": {}
         },
@@ -7784,37 +7704,6 @@
           "properties": {}
         },
         {
-          "ruleId": "8aa4387b-015e-33ea-bb99-1f7f1c9a3828",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Regex `r'[0-9]+'` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/rnnt/ootb/inference/pytorch/parts/text/numbers.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 29,
-                  "startColumn": 14,
-                  "endLine": 29,
-                  "endColumn": 35,
-                  "snippet": {
-                    "text": "_number_re = re.compile(r'[0-9]+')"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "f02637e575e5bd5c8e4a630047a04d69be3f29f71d343e1a2f041235c6ade738d378d9541204b0e9650ec29864241fb55c3a2ea3924d089b4c5738419f83dfd4_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "19b0a48a-0960-3d79-89d1-9046831c919b",
           "kind": "fail",
           "level": "warning",
@@ -7842,6 +7731,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "80ba45fc5e897404acfa4d2935db735b84c7a31f5e29b0cc6b418442bfe38c2565652425fbb13067759bd04bff17b50f7fb3fb27f98f214817f6005091a89b3d_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "8aa4387b-015e-33ea-bb99-1f7f1c9a3828",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Regex `r'[0-9]+'` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/rnnt/ootb/inference/pytorch/parts/text/numbers.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 14,
+                  "endLine": 29,
+                  "endColumn": 35,
+                  "snippet": {
+                    "text": "_number_re = re.compile(r'[0-9]+')"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "f02637e575e5bd5c8e4a630047a04d69be3f29f71d343e1a2f041235c6ade738d378d9541204b0e9650ec29864241fb55c3a2ea3924d089b4c5738419f83dfd4_0"
           },
           "properties": {}
         },
@@ -8373,37 +8293,6 @@
           "properties": {}
         },
         {
-          "ruleId": "c12a1b9b-1b7a-345e-9327-adcf5f86d968",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Regex `'epoch(\\d+)_'` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/rnnt/ootb/train/common/helpers.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 139,
-                  "startColumn": 18,
-                  "endLine": 139,
-                  "endColumn": 45,
-                  "snippet": {
-                    "text": "            (int(re.search('epoch(\\d+)_', f).group(1)), f)"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "4ce4527e6e849daff175f56a3f76a5444197cbd8ebdba8f3156b733604c9dcaea00657e58dc0d439bb1188cf26dfe63a0e1cc9094e143f5c22f3ce1f052619f6_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "3bf7f541-b35a-3815-93c2-c07f51f5a326",
           "kind": "fail",
           "level": "warning",
@@ -8431,6 +8320,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "b17a8a1043cc0475996c1d09aff437fad5e19eaac2876c81324e04b78b5bed2fde78cbea65408e7f62054708db552bb75a25948d4e8817a2c56e32502bd8ef81_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "c12a1b9b-1b7a-345e-9327-adcf5f86d968",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Regex `'epoch(\\d+)_'` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/rnnt/ootb/train/common/helpers.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 139,
+                  "startColumn": 18,
+                  "endLine": 139,
+                  "endColumn": 45,
+                  "snippet": {
+                    "text": "            (int(re.search('epoch(\\d+)_', f).group(1)), f)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "4ce4527e6e849daff175f56a3f76a5444197cbd8ebdba8f3156b733604c9dcaea00657e58dc0d439bb1188cf26dfe63a0e1cc9094e143f5c22f3ce1f052619f6_0"
           },
           "properties": {}
         },
@@ -8559,37 +8479,6 @@
           "properties": {}
         },
         {
-          "ruleId": "90e08b17-da73-3680-a559-8743bdd0b7b2",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Regex `'\\.(\\d+)'` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/rnnt/ootb/train/common/tb_dllogger.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 80,
-                  "startColumn": 25,
-                  "endLine": 80,
-                  "endColumn": 48,
-                  "snippet": {
-                    "text": "    saved = sorted([int(re.search('\\.(\\d+)', f).group(1))"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "b675ea60002dc8ab5dbc2702ec9d6004e8b4de3ff2cfd5bc51be78b3253677f2e0f66001687d091924b532c7731ea3d611f009f7bdb844d4578fe14605b706c0_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "825d3fa7-154b-38c4-93b0-726d9bb7e8f5",
           "kind": "fail",
           "level": "warning",
@@ -8652,37 +8541,6 @@
           "properties": {}
         },
         {
-          "ruleId": "681b57f6-2d34-3c7d-8b6c-8077858cfbb1",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Regex `regex` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/rnnt/ootb/train/common/text/cleaners.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 64,
-                  "startColumn": 16,
-                  "endLine": 64,
-                  "endColumn": 48,
-                  "snippet": {
-                    "text": "        text = re.sub(regex, replacement, text)"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "d198831fe4191180157e41b8f36a1228386c90688a868e6256b92f4751ff51c53ec7237a3f37c01710f61714b8338d67928181ce8ed6be4d5d3f93f5b77f4ce1_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "8a63af58-973a-3959-af14-93a4a5174aac",
           "kind": "fail",
           "level": "warning",
@@ -8710,6 +8568,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "a4cc372f809a67df297b9d6a3d318153c62d4b7d3bb807ed154d12bdb2cee0d2923f57c0f898e4efedae80a65c6c56c3d39b27e22a999c0e863840f14e85e391_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "681b57f6-2d34-3c7d-8b6c-8077858cfbb1",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Regex `regex` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/rnnt/ootb/train/common/text/cleaners.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 16,
+                  "endLine": 64,
+                  "endColumn": 48,
+                  "snippet": {
+                    "text": "        text = re.sub(regex, replacement, text)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "d198831fe4191180157e41b8f36a1228386c90688a868e6256b92f4751ff51c53ec7237a3f37c01710f61714b8338d67928181ce8ed6be4d5d3f93f5b77f4ce1_0"
           },
           "properties": {}
         },
@@ -8900,37 +8789,6 @@
           "properties": {}
         },
         {
-          "ruleId": "148917ae-fccd-3530-bf3d-f10ba0a3570a",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Regex `r'[0-9]+(st|nd|rd|th)'` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/rnnt/ootb/train/common/text/numbers.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 28,
-                  "startColumn": 15,
-                  "endLine": 28,
-                  "endColumn": 49,
-                  "snippet": {
-                    "text": "_ordinal_re = re.compile(r'[0-9]+(st|nd|rd|th)')"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "7e04b3d1a5edc9722b875eca22dfe3c861790081a493c3d19d635c1e5782507de04570ad14db08c53cd0dbcd4e14f6b28d9440d5d459967fb11a7e5f6bf98885_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "51958fbd-fae0-39e4-9f5d-f2514e395772",
           "kind": "fail",
           "level": "warning",
@@ -8958,6 +8816,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "06b9f74bc61b0b5ce84d569f5cd0b06bf97c3d03fd2c3c6253c3c3ae64c3eeecabc486541025e07c8ab381eaa2053f4e97238ce22cb7e1ecf4f09cab13dff38f_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "148917ae-fccd-3530-bf3d-f10ba0a3570a",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Regex `r'[0-9]+(st|nd|rd|th)'` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/rnnt/ootb/train/common/text/numbers.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 15,
+                  "endLine": 28,
+                  "endColumn": 49,
+                  "snippet": {
+                    "text": "_ordinal_re = re.compile(r'[0-9]+(st|nd|rd|th)')"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "7e04b3d1a5edc9722b875eca22dfe3c861790081a493c3d19d635c1e5782507de04570ad14db08c53cd0dbcd4e14f6b28d9440d5d459967fb11a7e5f6bf98885_0"
           },
           "properties": {}
         },
@@ -9024,37 +8913,6 @@
           "properties": {}
         },
         {
-          "ruleId": "bcd05f45-d254-3161-aab2-ad946950ce30",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Regex `_pounds_re` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "benchmarks/rnnt/ootb/train/common/text/numbers.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 93,
-                  "startColumn": 12,
-                  "endLine": 93,
-                  "endColumn": 50,
-                  "snippet": {
-                    "text": "    text = re.sub(_pounds_re, r'\\1 pounds', text)"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "7300bd794ed57b45446caaf8723f93b683856f6314e32b33ed34d8db9a2de806a8bc77a1714b0140bac8c0bdf873df369545375b6a2a38ed7fae0a060075b066_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "fede1c29-e417-3aa8-aa50-8a569a96bb2f",
           "kind": "fail",
           "level": "warning",
@@ -9082,6 +8940,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "856a1971f97fdebe5e455e161bd3a2dc992494506105a10143bb96fc418139617594671f27390f9b15ee7ed7a804112d9c93da9fc58b2952f9ae67922261ee9a_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "bcd05f45-d254-3161-aab2-ad946950ce30",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Regex `_pounds_re` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "benchmarks/rnnt/ootb/train/common/text/numbers.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 12,
+                  "endLine": 93,
+                  "endColumn": 50,
+                  "snippet": {
+                    "text": "    text = re.sub(_pounds_re, r'\\1 pounds', text)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "7300bd794ed57b45446caaf8723f93b683856f6314e32b33ed34d8db9a2de806a8bc77a1714b0140bac8c0bdf873df369545375b6a2a38ed7fae0a060075b066_0"
           },
           "properties": {}
         },
